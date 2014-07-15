@@ -1,0 +1,6 @@
+<%- thumbnails.each do |seconds, thumbnail_name| %>
+  <li>
+    <h2><%= SS.new(seconds).ss %></h2>
+    <%= video_thumbnail_link(video, thumbnail_name, seconds) %>
+  </li>
+<%- end %>

@@ -1,0 +1,18 @@
+---
+:concurrency: 16
+:queues:
+  - magnet_download
+  - magnet_source_import
+  - video_directory_import
+  - daily_magnet_sources_import
+  - hourly_remove_not_liked_videos
+  - hourly_magnet_download_enqueue
+  - hourly_magnet_download_tmp_dir_cleanup
+:limits:
+  magnet_download: 10
+  magnet_source_import: 1
+  video_directory_import: 1
+  daily_magnet_sources_import: 1
+  hourly_remove_not_liked_videos: 1
+  hourly_magnet_download_enqueue: 1
+  hourly_magnet_download_tmp_dir_cleanup: 1

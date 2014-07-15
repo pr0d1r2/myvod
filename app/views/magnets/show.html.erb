@@ -1,0 +1,21 @@
+<% cache @magnet do %>
+  <h1><%= @magnet.title %></h1>
+
+  <dl>
+    <dt>ID</dt>
+    <dd><%= @magnet.id %></dd>
+    <dt>Seeders</dt>
+    <dd><%= @magnet.seeders %></dd>
+    <dt>Leechers</dt>
+    <dd><%= @magnet.leechers %></dd>
+  </dl>
+
+  <%= form_for @magnet, :remote => true do |f| %>
+    <%- @magnet.all_flags.each do |flag| %>
+      <%= f.check_box flag, :checked => @magnet.send(flag), :class => 'check_box checkable' %>
+      <%= f.label flag, "#{flag.to_s.titleize}" %>
+    <%- end %>
+    <%= f.submit "submit" %>
+  <%- end %>
+
+<% end %>

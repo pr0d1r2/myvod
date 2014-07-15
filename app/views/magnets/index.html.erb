@@ -1,0 +1,22 @@
+<h1>Magnets Index</h1>
+
+<%= paginate @magnets %>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Seeders</th>
+    <th>Leechers</th>
+  </tr>
+  <%- @magnets.each do |magnet| %>
+    <tr>
+      <td><%= magnet.id %></td>
+      <td><%= link_to magnet.title, magnet_path(magnet.id) %></td>
+      <td><%= magnet.seeders %></td>
+      <td><%= magnet.leechers %></td>
+    </tr>
+  <%- end %>
+</table>
+
+<%= paginate @magnets %>

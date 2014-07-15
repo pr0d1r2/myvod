@@ -1,0 +1,50 @@
+<% cache [ @show_orginal, @video ] do %>
+  <h1><%= @video.name %></h1>
+
+  <div class="row-fluid">
+    <ul class="thumbnails">
+      <%- if @show_orginal %>
+        <li>
+          <h2>Detailed</h2>
+          <%= video_tag @video.detailed_url, :controls => true, :autobuffer => true, :id => 'video' %>
+          <%= link_to "Download", @video.detailed_url, :class => "btn" %>
+          <%= link_to "Show Preview", video_path(@video), :class => "btn" %>
+        </li>
+      <%- else %>
+        <%- Video::FORMATS.each do |format,size| %>
+          <li>
+            <h2><%= format %> (<%= size %>)</h2>
+            <%= video_tag @video.video.url(format), :size => size, :controls => true, :autobuffer => true, :id => 'video' %>
+            <%= link_to "Download", @video.video.url(format), :class => "btn" %>
+            <%- if @video.orginal_streamable? %>
+              <%= link_to 'Show Detailed', orginal_path(@video), :class => 'btn' %>
+            <%- end %>
+          </li>
+        <%- end %>
+      <%- end %>
+      <li>
+        <span><%= video_backward_1min_button %></span>
+        <span><%= video_forward_1min_button %></span>
+      </li>
+      <li>
+        <%= show_first_unseen_button('show next unseen') %>
+      </li>
+      <li>
+        <%= form_for @video, :remote => true do |f| %>
+          <%- @video.all_flags.each do |flag| %>
+            <%= f.check_box flag, :checked => @video.send(flag), :class => 'check_box checkable' %>
+            <%= f.label flag, "#{flag.to_s.titleize}" %>
+          <%- end %>
+          <%= f.submit "submit" %>
+        <%- end %>
+      </li>
+    </ul>
+    <ul class="thumbnails">
+      <%= render partial: 'videos/thumbnails', locals: { video: @video, thumbnails: @video.all_thumbnails } %>
+    </ul>
+  </div>
+
+  <p><%= show_first_unseen_button('show next unseen') %></p>
+
+  <p>x</p>
+<% end %>

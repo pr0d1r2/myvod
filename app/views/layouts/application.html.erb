@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myvod</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="/">MyVod</a>
+      <ul class="nav">
+        <%- long_navigation_options.each do |name,path| %>
+        <%= menuitem(name, path) %>
+        <%- end %>
+      </ul>
+    </div>
+  </div>
+
+<%= yield %>
+
+</body>
+</html>
