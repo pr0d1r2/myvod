@@ -9,6 +9,7 @@ Requirements
 - Https configured www server (example configuration for nginx in config/nginx).
 - Tor proxy on host machine.
 - FFmpeg for video conversions and thumbnailing.
+- Redis for sidekiq/sidetiq support
 
 Setup
 -----
