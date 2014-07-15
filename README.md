@@ -33,3 +33,9 @@ k.categories [ 207 ] # HD Movies
 k.save!
 DailyMagnetSourcesImportWorker.perform_async
 ```
+
+Contrubution
+------------
+
+- Pull requests welcome
+- Please send suggestions to pr0d1r2@gmail.com
