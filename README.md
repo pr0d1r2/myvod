@@ -40,7 +40,7 @@ Usage
 ```ruby
 k = Keyword.new
 k.keyword = "YIFY 1080p"
-k.categories [ 207 ] # HD Movies
+k.categories [ 207 ] # HD Movies (https://thepiratebay.se/browse/207)
 k.save!
 DailyMagnetSourcesImportWorker.perform_async
 ```
