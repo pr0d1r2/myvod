@@ -12,6 +12,7 @@ Features
 - Browse torrents (and possibility to make request of download by like it)
 - Prevent filling up disk (by default downloads stops when 500GB free space)
 - Tested on dedicated server (8core i7 + 32GB RAM + 6TB HDD) for 6 months -> video throughput ~300 per day
+- All downloads via TOR
 
 Requirements
 ------------
