@@ -3,6 +3,16 @@ MyVOD
 
 Self hosted video on demand solution with keyword based torrent auto-download via PirateBay using TOR.
 
+Features
+--------
+
+- Automatically download and transcode videos to quick preview format
+- You can like video or make it best (separate views to navigate with huge amount of videos)
+- Automatically remove seen but not liked videos
+- Browse torrents (and possibility to make request of download by like it)
+- Prevent filling up disk (by default downloads stops when 500GB free space)
+- Tested on dedicated server (8core i7 + 32GB RAM + 6TB HDD) for 6 months -> video throughput ~300 per day
+
 Requirements
 ------------
 
