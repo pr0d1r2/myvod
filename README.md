@@ -21,6 +21,7 @@ Requirements
 - Tor proxy on host machine.
 - FFmpeg for video conversions and thumbnailing.
 - Redis for sidekiq/sidetiq support
+- PostgreSQL for database
 
 Setup
 -----
