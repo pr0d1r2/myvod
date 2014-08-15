@@ -1,8 +1,17 @@
 GIT
-  remote: git://github.com/rails/activerecord-deprecated_finders.git
-  revision: 86b8d3babecc30f3f3c9a2d937e3e845555b254a
+  remote: https://github.com/kanechika7/capybara-user_agent.git
+  revision: b3b6941dc8b572effa947dad5f412ceaea3ad62c
   specs:
-    activerecord-deprecated_finders (1.0.3)
+    capybara-user_agent (0.0.1)
+      capybara (~> 2.0, >= 2.0.2)
+
+GIT
+  remote: https://github.com/pr0d1r2/thepiratebay.git
+  revision: b99cc15e897a16b18d7935fa9dc5b76d1292cd6b
+  specs:
+    thepiratebay (0.2.0)
+      nokogiri
+      socksify
 
 GIT
   remote: git://github.com/rails/coffee-rails.git
@@ -31,19 +40,10 @@ GIT
       sprockets (~> 2.8)
 
 GIT
-  remote: https://github.com/kanechika7/capybara-user_agent.git
-  revision: b3b6941dc8b572effa947dad5f412ceaea3ad62c
+  remote: git://github.com/rails/activerecord-deprecated_finders.git
+  revision: 86b8d3babecc30f3f3c9a2d937e3e845555b254a
   specs:
-    capybara-user_agent (0.0.1)
-      capybara (~> 2.0, >= 2.0.2)
-
-GIT
-  remote: https://github.com/pr0d1r2/thepiratebay.git
-  revision: b99cc15e897a16b18d7935fa9dc5b76d1292cd6b
-  specs:
-    thepiratebay (0.2.0)
-      nokogiri
-      socksify
+    activerecord-deprecated_finders (1.0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -112,16 +112,16 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     colored (1.2)
-    columnize (0.3.6)
+    columnize (0.8.9)
     connection_pool (1.1.0)
     database_cleaner (1.0.1)
     debug_inspector (0.0.2)
-    debugger (1.6.5)
+    debugger (1.6.8)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.1)
+      debugger-ruby_core_source (~> 1.3.5)
     debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.1)
+    debugger-ruby_core_source (1.3.5)
     diff-lcs (1.2.4)
     dotenv (0.7.0)
     erubis (2.7.0)
