@@ -35,7 +35,9 @@ Myvod::Application.configure do
   config.active_support.deprecation = :stderr
 
   config.magnet_download_tmp_dir = "#{Rails.root}/tmp/test/DownloadZ"
+  config.magnet_download_tmp_dir_free_space = 2000 # GB
   config.magnet_download_finished_dir = "#{Rails.root}/tmp/test/Downloads"
+  config.magnet_download_finished_dir_free_space = 2000 # GB
 
   config.magnet_download_timeout = 12.hours.to_i
 end

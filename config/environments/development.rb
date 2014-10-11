@@ -26,7 +26,9 @@ Myvod::Application.configure do
   config.assets.debug = true
 
   config.magnet_download_tmp_dir = "#{Rails.root}/tmp/development/DownloadZ"
+  config.magnet_download_tmp_dir_free_space = 2000 # GB
   config.magnet_download_finished_dir = "#{Rails.root}/tmp/development/Downloads"
+  config.magnet_download_finished_dir_free_space = 2000 # GB
 
   config.magnet_download_timeout = 12.hours.to_i
 end

@@ -84,7 +84,9 @@ Myvod::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.magnet_download_tmp_dir = "#{ENV['HOME']}/DownloadZ"
+  config.magnet_download_tmp_dir_free_space = 500 # GB
   config.magnet_download_finished_dir = "#{ENV['HOME']}/Downloads"
+  config.magnet_download_finished_dir_free_space = 500 # GB
 
   config.magnet_download_timeout = 12.hours.to_i
 

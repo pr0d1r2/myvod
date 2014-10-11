@@ -1,7 +1,7 @@
 # describes single magnet imported from magnet source
 # basis for magnet download
 class Magnet < ActiveRecord::Base # rubocop:disable ClassLength
-  MINIMUM_FREE_DISK_SPACE = 2000 # GB
+  MINIMUM_FREE_DISK_SPACE = Rails.configuration.magnet_download_finished_dir_free_space # GB # rubocop:disable LineLength
 
   include FlagShihTzu
   include AwesomeFlags
