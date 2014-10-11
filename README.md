@@ -11,8 +11,16 @@ Features
 - Automatically remove seen but not liked videos
 - Browse torrents (and possibility to make request of download by like it)
 - Prevent filling up disk (by default downloads stops when 500GB free space)
-- Tested on dedicated server (8core i7 + 32GB RAM + 6TB HDD) for 6 months -> video throughput ~300 per day
 - All downloads via TOR
+
+Performance
+-----------
+- Tested on dedicated server (8core i7 + 32GB RAM + 6TB HDD) for 6 months -> video throughput ~300 per day
+- 10 parallel downloads
+- 1 transcoding (using all processor cores with renice of 20 aka lowest prio possible)
+- 2-5 clients watching videos without any problems (not tested more)
+- 4-6 load on server all the time (caused mostly by transcoding)
+- You can significantly increase performance for multiple users when using ZFS + lot of RAM for cache (or even adding L2ARC SSD[s] cache)
 
 Requirements
 ------------
