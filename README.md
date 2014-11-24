@@ -28,6 +28,7 @@ Requirements
 - Https configured www server (example configuration for nginx in config/nginx).
 - Tor proxy on host machine.
 - FFmpeg for video conversions and thumbnailing.
+- qtfaststart for video operations
 - Redis for sidekiq/sidetiq support
 - PostgreSQL for database
 
@@ -59,6 +60,8 @@ Development
 - fork it
 - clone it
 - rbenv install 2.0.0-p598
+- brew install ffmpeg
+- brew install qtfaststart
 - gem install bundler
 - bundle
 - bundle exec rake db:create && rake db:migrate && rake db:test:clone
