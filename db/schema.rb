@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 20140207094232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-  enable_extension "hstore"
 
   create_table "bad_words", force: true do |t|
     t.string   "word",       null: false
@@ -78,7 +77,7 @@ ActiveRecord::Schema.define(version: 20140207094232) do
     t.integer  "video_file_size",       limit: 8
     t.datetime "video_updated_at"
     t.string   "duration",                                     null: false
-    t.integer  "flags",                 db/schema.rb           default: 0, null: false
+    t.integer  "flags",                            default: 0, null: false
     t.string   "original_md5_checksum", limit: 32
     t.datetime "deleted_at"
     t.string   "videoable_type"
