@@ -70,7 +70,7 @@ group :development do
   gem 'capistrano-ext'
   gem 'rvm-capistrano'
   gem 'sandi_meter'
-  gem 'pry-plus'
+  gem 'pry'
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'guard'
