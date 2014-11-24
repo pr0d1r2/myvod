@@ -1,7 +1,7 @@
 # class describing magnet tmp directory used for downloads
 class MagnetTmpDir
   PATH = Rails.configuration.magnet_download_tmp_dir
-  MINIMUM_FREE_DISK_SPACE = Rails.configuration.config.magnet_download_tmp_dir_free_space # GB # rubocop:disable LineLength
+  MINIMUM_FREE_DISK_SPACE = Rails.configuration.magnet_download_tmp_dir_free_space # GB # rubocop:disable LineLength
   MINIMUM_EXISTANCE_TIME_FOR_REMOVAL = Rails.configuration.magnet_download_timeout + 1.hour.to_i # rubocop:disable LineLength
 
   def self.have_disk_space?
