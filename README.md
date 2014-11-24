@@ -54,6 +54,17 @@ k.save!
 DailyMagnetSourcesImportWorker.perform_async
 ```
 
+Development
+-----------
+- fork it
+- clone it
+- rbenv install 2.0.0-p598
+- gem install bundler
+- bundle
+- bundle exec rake db:create && rake db:migrate && rake db:test:clone
+- bundle exec rspec
+- bundle exec guard
+
 Contrubution
 ------------
 
