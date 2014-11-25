@@ -1,0 +1,4 @@
+server: my-vod.eu
+user: myvod
+ssh_port: 22
+deploy_to: /home/myvod

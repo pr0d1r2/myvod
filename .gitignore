@@ -17,3 +17,4 @@
 .DS_Store
 public/system
 coverage/
+config/deploy.yml

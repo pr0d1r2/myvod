@@ -1,6 +1,8 @@
+CONFIGURATION = YAML.load_file(File.join(File.dirname(__FILE__), 'deploy.yml'))
+
 set :application, "myvod"
 set :rvm_ruby_string, "2.0.0@#{application}"
-set :the_server, "my-vod.eu"
+set :the_server, CONFIGURATION['server']
 
 set :the_site, "http://#{the_server}"
 
@@ -8,13 +10,13 @@ role :web, the_server
 role :app, the_server
 role :db,  the_server, :primary => true
 
-set :user, application
-ssh_options[:port] = 22
+set :user, CONFIGURATION['user']
+ssh_options[:port] = CONFIGURATION['ssh_port']
 
 set :repository, "."
 set :scm, :none
 set :deploy_via, :copy
-set :deploy_to, "/home/#{user}"
+set :deploy_to, CONFIGURATION['deploy_to']
 
 set :rails_env, "production"
 set :shared_path, "#{deploy_to}/shared"

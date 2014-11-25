@@ -68,6 +68,12 @@ Development
 - bundle exec rspec
 - bundle exec guard
 
+Deployment
+----------
+- cp config/deploy.yml.sample config/deploy.yml
+- configure config/deploy.yml
+- cap deploy
+
 Contrubution
 ------------
 
