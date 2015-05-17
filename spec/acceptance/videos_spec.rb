@@ -34,9 +34,7 @@ feature 'Videos', %q{
       visit videos_path
 
       click_link 'show first unseen'
-      within(:xpath, thumbnails_xpath) do
-        page.should have_content('00:00:03')
-      end
+      page.should have_content('00:00:03')
 
       visit video_path(big_video)
       big_video.update_attribute(:seen, false)
@@ -45,24 +43,20 @@ feature 'Videos', %q{
       visit video_path(big_video)
 
       # have thumbnails
-      within(:xpath, thumbnails_xpath) do
-        %w(00:00:00 00:00:03 00:00:07 00:00:10
-           00:00:14 00:00:17 00:00:21 00:00:24
-           00:00:28 00:00:31 00:00:35 00:00:38
-           00:00:42 00:00:46 00:00:49 00:00:53
-           00:00:56 00:01:00 00:01:03 00:01:07
-           00:01:10 00:01:14 00:01:17 00:01:21).each do |ss|
-          page.should have_content(ss)
-        end
+      %w(00:00:00 00:00:03 00:00:07 00:00:10
+         00:00:14 00:00:17 00:00:21 00:00:24
+         00:00:28 00:00:31 00:00:35 00:00:38
+         00:00:42 00:00:46 00:00:49 00:00:53
+         00:00:56 00:01:00 00:01:03 00:01:07
+         00:01:10 00:01:14 00:01:17 00:01:21).each do |ss|
+        page.should have_content(ss)
       end
 
       # have video headers
-      within(:xpath, controls_xpath) do
-        # page.should have_content('iphone4 (960x640)')
-        # page.should have_content('iphone (640x480)')
-        page.should have_content("ipod (#{size})")
-        page.should have_content('Like')
-      end
+      # page.should have_content('iphone4 (960x640)')
+      # page.should have_content('iphone (640x480)')
+      page.should have_content("ipod (#{size})")
+      page.should have_content('Like')
 
       big_video.destroy!
     end
@@ -285,11 +279,9 @@ feature 'Videos', %q{
 
     scenario 'can like video' do
       visit video_path(video)
-      within(:xpath, controls_xpath) do
-        find('#video_like').should_not be_checked
-        check('Like')
-        click_on('submit')
-      end
+      find('#video_like').should_not be_checked
+      check('Like')
+      click_on('submit')
       Video.last.like.should be_true
     end
 
@@ -318,11 +310,9 @@ feature 'Videos', %q{
 
     scenario 'can unlike video' do
       visit video_path(video)
-      within(:xpath, controls_xpath) do
-        find('#video_like').should be_checked
-        uncheck('Like')
-        click_on('submit')
-      end
+      find('#video_like').should be_checked
+      uncheck('Like')
+      click_on('submit')
       Video.last.like.should be_false
     end
 
@@ -363,11 +353,9 @@ feature 'Videos', %q{
 
     scenario 'can best video' do
       visit video_path(video)
-      within(:xpath, controls_xpath) do
-        find('#video_best').should_not be_checked
-        check('Best')
-        click_on('submit')
-      end
+      find('#video_best').should_not be_checked
+      check('Best')
+      click_on('submit')
       Video.last.best.should be_true
     end
 
@@ -396,11 +384,9 @@ feature 'Videos', %q{
 
     scenario 'can unbest video' do
       visit video_path(video)
-      within(:xpath, controls_xpath) do
-        find('#video_best').should be_checked
-        uncheck('Best')
-        click_on('submit')
-      end
+      find('#video_best').should be_checked
+      uncheck('Best')
+      click_on('submit')
       Video.last.best.should be_false
     end
 
@@ -433,17 +419,6 @@ feature 'Videos', %q{
   end
 
   def video_should_be_seen
-    within(:xpath, controls_xpath) do
-      find('#video_seen').should be_checked
-    end
+    find('#video_seen').should be_checked
   end
-
-  def controls_xpath
-    '//ul[2]'
-  end
-
-  def thumbnails_xpath
-    '//ul[3]'
-  end
-
 end

@@ -4,6 +4,16 @@ describe MagnetSource do
 
   let(:the_object) { FactoryGirl.create(:magnet_source) }
   let(:page) { 1 }
+  before do
+    {
+      files: 10,
+      size: 10_000,
+      uploaded: Time.now,
+      description: 'description'
+    }.each do |method, returns|
+      TorrentDetails.any_instance.stub(method).and_return(returns)
+    end
+  end
 
   describe '.import!' do
     let(:magnet_source_id) { 8472 }

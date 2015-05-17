@@ -75,7 +75,7 @@ class Magnet < ActiveRecord::Base # rubocop:disable ClassLength
     end
   end
 
-  def assign_attributes(attributes)
+  def assign_attributes(attributes) # rubocop:disable MethodLength
     self.title = attributes[:title]
     self.seeders = attributes[:seeders]
     self.leechers = attributes[:leechers]
@@ -83,6 +83,10 @@ class Magnet < ActiveRecord::Base # rubocop:disable ClassLength
     self.torrent_id = attributes[:torrent_id]
     self.category = attributes[:category]
     self.url = attributes[:url]
+    self.files = attributes[:files]
+    self.size = attributes[:size]
+    self.uploaded = attributes[:uploaded]
+    self.description = attributes[:description]
   end
 
   def self.download_timeout!(magnet_id)

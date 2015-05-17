@@ -57,6 +57,14 @@ FactoryGirl.define do
       leechers 120
     end
 
+    trait :with_real_torrent_id do
+      torrent_id 6_232_477
+      files 3
+      size 890_732_416
+      uploaded Time.new(2011, 3, 10, 10, 44, 47)
+      description 'desc'
+    end
+
     factory :magnet_seen, traits: [:seen]
 
     factory :magnet_liked, traits: [:seen, :liked]
@@ -81,6 +89,10 @@ FactoryGirl.define do
 
     factory :magnet_with_seeders_and_higher_leechers, traits: [
       :seeders_and_higher_leechers
+    ]
+
+    factory :magnet_with_real_torrent_id, traits: [
+      :with_real_torrent_id
     ]
   end
 

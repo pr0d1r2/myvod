@@ -13,9 +13,16 @@ class MagnetSource < ActiveRecord::Base
     find(id).import
   end
 
-  def import
+  def import # rubocop:disable MethodLength
     1.upto(number_of_pages) do |page|
       fetch_results(page).each do |result|
+        torrent_details = TorrentDetails.new(result[:torrent_id])
+        result.merge!(
+          files: torrent_details.files,
+          size: torrent_details.size,
+          uploaded: torrent_details.uploaded,
+          description: torrent_details.description,
+        )
         magnets.create_or_update_by_torrent_id(result)
       end
     end

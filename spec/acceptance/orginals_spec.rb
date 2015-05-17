@@ -20,14 +20,10 @@ feature 'Orginals', %q{
       visit videos_path
       page.find(:xpath, "//img[@alt='Streamable']/..").click
       page.should have_xpath(streamable_video_xpath)
-      within(:xpath, '//ul[2]') do
-        find('#video_seen').should be_checked
-      end
+      find('#video_seen').should be_checked
       video.reload.seen.should be_true
       click_link('Show Detailed')
-      within(:xpath, '//h2[1]') do
-        page.should have_content('Detailed')
-      end
+      page.should have_content('Detailed')
     end
   end
 

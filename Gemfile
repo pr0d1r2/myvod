@@ -86,6 +86,8 @@ group :test do
   gem 'capybara-user_agent', :git => 'https://github.com/kanechika7/capybara-user_agent.git'
   gem 'launchy'
   gem 'rspec-sidekiq'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :test, :development do

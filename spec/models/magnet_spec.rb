@@ -1,9 +1,8 @@
 require 'spec_helper'
 
 describe Magnet do
-
   let(:magnet_source) { FactoryGirl.create(:magnet_source) }
-  let(:magnet) { FactoryGirl.create(:magnet) }
+  let(:magnet) { FactoryGirl.create(:magnet_with_real_torrent_id) }
   subject { magnet }
   let(:link) { subject.link }
 
@@ -24,7 +23,11 @@ describe Magnet do
         magnet_link: 'magnet:?xt=urn:btih:updated',
         torrent_id: torrent_id,
         category: 'Audio',
-        url: "/torrent/#{torrent_id}/example"
+        url: "/torrent/#{torrent_id}/example",
+        files: 3,
+        size: 890_732_416,
+        uploaded: DateTime.new(2011, 3, 10, 10, 44, 47),
+        description: 'Sam Flynn'
       }
     end
     subject { Magnet.find_by_torrent_id(torrent_id).reload }
@@ -41,6 +44,11 @@ describe Magnet do
       its(:magnet_link) { should == update_attributes[:magnet_link] }
       its(:category) { should == update_attributes[:category] }
       its(:url) { should == update_attributes[:url] }
+
+      its(:files) { should == 3 }
+      its(:size) { should == 890_732_416 }
+      its(:uploaded) { should == DateTime.new(2011, 3, 10, 10, 44, 47) }
+      its(:description) { should include('Sam Flynn') }
     end
 
     context 'when record with torrent_id does not exist' do
@@ -58,6 +66,11 @@ describe Magnet do
       its(:magnet_link) { should == update_attributes[:magnet_link] }
       its(:category) { should == update_attributes[:category] }
       its(:url) { should == update_attributes[:url] }
+
+      its(:files) { should == 3 }
+      its(:size) { should == 890_732_416 }
+      its(:uploaded) { should == DateTime.new(2011, 3, 10, 10, 44, 47) }
+      its(:description) { should include('Sam Flynn') }
     end
 
     context 'when trying to import with non-numeric torrent_id' do

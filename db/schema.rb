@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140207094232) do
+ActiveRecord::Schema.define(version: 20141125110523) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,18 +51,22 @@ ActiveRecord::Schema.define(version: 20140207094232) do
   add_index "magnet_sources", ["magnet_keyword", "category"], name: "index_magnet_sources_on_magnet_keyword_and_category", unique: true, using: :btree
 
   create_table "magnets", force: true do |t|
-    t.text     "link",                         null: false
+    t.text     "link",                                   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "title",                        null: false
-    t.integer  "seeders",                      null: false
-    t.integer  "leechers",                     null: false
-    t.string   "category",                     null: false
-    t.integer  "torrent_id",                   null: false
-    t.string   "url",                          null: false
-    t.integer  "magnet_source_id",             null: false
-    t.integer  "flags",            default: 0, null: false
+    t.string   "title",                                  null: false
+    t.integer  "seeders",                                null: false
+    t.integer  "leechers",                               null: false
+    t.string   "category",                               null: false
+    t.integer  "torrent_id",                             null: false
+    t.string   "url",                                    null: false
+    t.integer  "magnet_source_id",                       null: false
+    t.integer  "flags",                      default: 0, null: false
     t.string   "workflow_state"
+    t.integer  "files"
+    t.integer  "size",             limit: 8
+    t.datetime "uploaded"
+    t.text     "description"
   end
 
   add_index "magnets", ["magnet_source_id"], name: "index_magnets_on_magnet_source_id", using: :btree

@@ -9,6 +9,12 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'factory_girl'
 require 'sidekiq/testing/inline'
+require 'vcr'
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  c.hook_into :webmock
+end
 
 require 'database_cleaner'
 DatabaseCleaner.strategy = :truncation
