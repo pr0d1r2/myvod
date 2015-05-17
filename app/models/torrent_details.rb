@@ -1,3 +1,4 @@
+# expose details for torrent
 class TorrentDetails
   attr_reader :torrent_id
 
@@ -10,7 +11,7 @@ class TorrentDetails
   end
 
   def size
-    response[:size].split("(").last.to_i
+    response[:size].split('(').last.to_i
   end
 
   def uploaded
