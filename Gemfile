@@ -68,7 +68,7 @@ group :development do
   gem 'foreman'
   gem 'capistrano'
   gem 'capistrano-ext'
-  gem 'rvm-capistrano'
+  gem 'rvm-capistrano', require: false
   gem 'sandi_meter'
   gem 'pry'
   gem 'spring'

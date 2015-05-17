@@ -1,0 +1,433 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://thepiratebay.se/torrent/6232477
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Wed, 26 Nov 2014 09:34:13 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/5.4.34
+      Set-Cookie:
+      - PHPSESSID=dae03bbf0ea58580598dd480db0370db; path=/; domain=.thepiratebay.se
+      - language=en_EN; expires=Thu, 26-Nov-2015 09:34:13 GMT; path=/; domain=.thepiratebay.se
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Last-Modified:
+      - Wed, 26 Nov 2014 09:34:13 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      - post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" >\n<head>\n\n\t<title>Tron Legacy (2010)
+        BrRip 720p mkv - YIFY (download torrent) - TPB</title>\n\t<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\"/>\n\t<meta name=\"google-site-verification\"
+        content=\"bERYeomIC5eBWlPLupPPYPYGA9GvAUKzFHh3WIw24Xs\" />\n\t<link rel=\"search\"
+        type=\"application/opensearchdescription+xml\" href=\"/opensearch.xml\" title=\"Search
+        The Pirate Bay\" />\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/css-new/pirate6.css\"/>\n\t<link
+        rel=\"dns-prefetch\" href=\"//cdn1.adexprt.com/\">\n\t<link rel=\"dns-prefetch\"
+        href=\"//cdn2.adexprt.com/\">\n\t<link rel=\"dns-prefetch\" href=\"//cdn3.adexprt.com/\">\n\t<link
+        rel=\"dns-prefetch\" href=\"//cdn3.adexprts.com/\">\n\t<link rel=\"dns-prefetch\"
+        href=\"//0427d7.se/\">\n\t<link rel=\"dns-prefetch\" href=\"//syndication.exoclick.com/\">\n\t<link
+        rel=\"dns-prefetch\" href=\"//main.exoclick.com/\">\n\t<link rel=\"dns-prefetch\"
+        href=\"//cdn.bitfalcon.tv/\">\n\t<link rel=\"canonical\" href=\"http://thepiratebay.se/torrent/6232477\"
+        />\n\t<style type=\"text/css\">\n\t\t.searchBox{\n\t\t\tmargin: 6px;\n\t\t\twidth:
+        300px;\n\t\t\tvertical-align: middle;\n\t\t\tpadding: 2px;\n\t\t        background-image:url('/static/img/icon-https.gif');\n
+        \       \t\tbackground-repeat:no-repeat;\n\t\t        background-position:
+        right;\n\t\t}\n\n\t\t.detLink {\n\t\t\tfont-size: 1.2em;\n\t\t\tfont-weight:
+        400;\n\t\t}\n\t\t.detDesc {\n\t\t\tcolor: #4e5456;\n\t\t}\n\t\t.detDesc a:hover
+        {\n\t\t\tcolor: #000099;\n\t\t\ttext-decoration: underline;\n\t\t}\n\t\t.sortby
+        {\n\t\t\ttext-align: left;\n\t\t\tfloat: left;\n\t\t}\n\t\t.detName {\n\t\t\tpadding-top:
+        3px;\n\t\t\tpadding-bottom: 2px;\n\t\t}\n\t\t.viewswitch {\n\t\t\tfont-style:
+        normal;\n\t\t\tfloat: right;\n\t\t\ttext-align: right;\n\t\t\tfont-weight:
+        normal;\n\t\t}\n\t</style>\n\t<script src=\"/static/js/jquery.min.js\" type=\"text/javascript\"></script>\n\t<script
+        src=\"/static/js/tpb.js\" type=\"text/javascript\"></script>\n\t<script src=\"/static/js/prototype.js\"
+        type=\"text/javascript\"></script>\n\t<script src=\"/static/js/scriptaculous.js\"
+        type=\"text/javascript\"></script>\n\t<script src=\"/static/js/details.js\"
+        type=\"text/javascript\"></script>\n\t<link rel=\"stylesheet\" type=\"text/css\"
+        href=\"/static/css-new/details.css\"/>\n\t<meta name=\"description\" content=\"Download
+        Tron Legacy (2010) BrRip 720p mkv - YIFY torrent or any other torrent from
+        the Video HD - Movies. Direct download via magnet link.\"/>\n\t<meta name=\"keywords\"
+        content=\"Tron Legacy (2010) BrRip 720p mkv - YIFY Video HD - Movies Direct
+        download torrent magnet\"/>\n\n\t<script language=\"javascript\" type=\"text/javascript\">if
+        (top.location != self.location) {top.location.replace(self.location);}</script>\n</head>\n\n<body>\n\t<div
+        id=\"header\">\n\n\n\t\t<div class=\"ad\">\n\t\t <iframe src=\"//cdn2.adexprt.com/exo_na/top.html\"
+        width=\"468\" height=\"60\" frameborder=\"0\" scrolling=\"no\"></iframe>\n\t\t</div>\n\t\t\t<form
+        method=\"get\" id=\"q\" action=\"/s/\">\n\t\t\t<a href=\"/\" class=\"img\"><img
+        src=\"/static/img/tpblogo_sm_ny.gif\" id=\"TPBlogo\" alt=\"The Pirate Bay\"
+        /></a>\n\t\t\t<b><a href=\"/\" title=\"Search Torrents\">Search Torrents</a></b>&nbsp;&nbsp;|&nbsp;\n\t\t\t<a
+        href=\"/browse\" title=\"Browse Torrents\">Browse Torrents</a>&nbsp;&nbsp;|&nbsp;\n\t\t\t<a
+        href=\"/recent\" title=\"Recent Torrent\">Recent Torrents</a>&nbsp;&nbsp;|&nbsp;\n\t\t\t<a
+        href=\"/tv/\" title=\"TV shows\">TV shows</a>&nbsp;&nbsp;|&nbsp;\n\t\t\t<a
+        href=\"/music\" title=\"Music\">Music</a>&nbsp;&nbsp;|&nbsp;\n\t\t\t<a href=\"/top\"
+        title=\"Top 100\">Top 100</a>\n\t\t\t<br /><input type=\"search\" class=\"inputbox\"
+        title=\"Pirate Search\" name=\"q\" placeholder=\"Search here...\" value=\"\"
+        /><input value=\"Pirate Search\" type=\"submit\" class=\"submitbutton\" /><br
+        />\t\t\t<label for=\"audio\" title=\"Audio\"><input id=\"audio\" name=\"audio\"
+        onclick=\"javascript:rmAll();\" type=\"checkbox\"/>Audio</label>\n\t\t\t<label
+        for=\"video\" title=\"Video\"><input id=\"video\" name=\"video\" onclick=\"javascript:rmAll();\"
+        type=\"checkbox\"/>Video</label>\n\t\t\t<label for=\"apps\" title=\"Applications\"><input
+        id=\"apps\" name=\"apps\" onclick=\"javascript:rmAll();\" type=\"checkbox\"/>Applications</label>\n\t\t\t<label
+        for=\"games\" title=\"Games\"><input id=\"games\" name=\"games\" onclick=\"javascript:rmAll();\"
+        type=\"checkbox\"/>Games</label>\n\t\t\t<label for=\"porn\" title=\"Porn\"><input
+        id=\"porn\" name=\"porn\" onclick=\"javascript:rmAll();\" type=\"checkbox\"/>Porn</label>\n\t\t\t<label
+        for=\"other\" title=\"Other\"><input id=\"other\" name=\"other\" onclick=\"javascript:rmAll();\"
+        type=\"checkbox\"/>Other</label>\n\n\t\t\t<select id=\"category\" name=\"category\"
+        onchange=\"javascript:setAll();\">\n        \t        \t<option value=\"0\">All</option>\n\t\t\t\t<optgroup
+        label=\"Audio\">\n\t\t\t\t\t<option value=\"101\">Music</option>\n\t\t\t\t\t<option
+        value=\"102\">Audio books</option>\n\t\t\t\t\t<option value=\"103\">Sound
+        clips</option>\n\t\t\t\t\t<option value=\"104\">FLAC</option>\n\t\t\t\t\t<option
+        value=\"199\">Other</option>\n\t\t\t\t</optgroup>\n\t\t\t\t<optgroup label=\"Video\">\n\t\t\t\t\t<option
+        value=\"201\">Movies</option>\n\t\t\t\t\t<option value=\"202\">Movies DVDR</option>\n\t\t\t\t\t<option
+        value=\"203\">Music videos</option>\n\t\t\t\t\t<option value=\"204\">Movie
+        clips</option>\n\t\t\t\t\t<option value=\"205\">TV shows</option>\n\t\t\t\t\t<option
+        value=\"206\">Handheld</option>\n\t\t\t\t\t<option value=\"207\">HD - Movies</option>\n\t\t\t\t\t<option
+        value=\"208\">HD - TV shows</option>\n\t\t\t\t\t<option value=\"209\">3D</option>\n\t\t\t\t\t<option
+        value=\"299\">Other</option>\n\t\t\t\t</optgroup>\n\t\t\t\t<optgroup label=\"Applications\">\n\t\t\t\t\t<option
+        value=\"301\">Windows</option>\n\t\t\t\t\t<option value=\"302\">Mac</option>\n\t\t\t\t\t<option
+        value=\"303\">UNIX</option>\n\t\t\t\t\t<option value=\"304\">Handheld</option>\n\t\t\t\t\t<option
+        value=\"305\">IOS (iPad/iPhone)</option>\n\t\t\t\t\t<option value=\"306\">Android</option>\n\t\t\t\t\t<option
+        value=\"399\">Other OS</option>\n\t\t\t\t</optgroup>\n\t\t\t\t<optgroup label=\"Games\">\n\t\t\t\t\t<option
+        value=\"401\">PC</option>\n\t\t\t\t\t<option value=\"402\">Mac</option>\n\t\t\t\t\t<option
+        value=\"403\">PSx</option>\n\t\t\t\t\t<option value=\"404\">XBOX360</option>\n\t\t\t\t\t<option
+        value=\"405\">Wii</option>\n\t\t\t\t\t<option value=\"406\">Handheld</option>\n\t\t\t\t\t<option
+        value=\"407\">IOS (iPad/iPhone)</option>\n\t\t\t\t\t<option value=\"408\">Android</option>\n\t\t\t\t\t<option
+        value=\"499\">Other</option>\n\t\t\t\t</optgroup>\n\t\t\t\t<optgroup label=\"Porn\">\n\t\t\t\t\t<option
+        value=\"501\">Movies</option>\n\t\t\t\t\t<option value=\"502\">Movies DVDR</option>\n\t\t\t\t\t<option
+        value=\"503\">Pictures</option>\n\t\t\t\t\t<option value=\"504\">Games</option>\n\t\t\t\t\t<option
+        value=\"505\">HD - Movies</option>\n\t\t\t\t\t<option value=\"506\">Movie
+        clips</option>\n\t\t\t\t\t<option value=\"599\">Other</option>\n\t\t\t\t</optgroup>\n\t\t\t\t<optgroup
+        label=\"Other\">\n\t\t\t\t\t<option value=\"601\">E-books</option>\n\t\t\t\t\t<option
+        value=\"602\">Comics</option>\n\t\t\t\t\t<option value=\"603\">Pictures</option>\n\t\t\t\t\t<option
+        value=\"604\">Covers</option>\n\t\t\t\t\t<option value=\"605\">Physibles</option>\n\t\t\t\t\t<option
+        value=\"699\">Other</option>\n\t\t\t\t</optgroup>\n\t\t\t</select>\n\n\t\t\t<input
+        type=\"hidden\" name=\"page\" value=\"0\" />\n\t\t\t<input type=\"hidden\"
+        name=\"orderby\" value=\"99\" />\n\t\t</form>\n\t</div><!-- // div:header
+        -->\n\n\t<h2><span>Details for this torrent</span>&nbsp;</h2>\n<div id=\"content\">\n\n\t\t\t<div
+        id=\"sky-right\">\n\t\t\t\t <iframe src=\"//cdn2.adexprt.com/exo_na/sky2.html\"
+        width=\"160\" height=\"600\" frameborder=\"0\" scrolling=\"no\"></iframe>\n\t\t\t</div>\n\t<div
+        id=\"main-content\">\n\n\t\t\t <iframe src=\"//cdn2.adexprt.com/cdn3/index.php?b=top&n=Tron_Legacy_%282010%29_BrRip_720p_mkv_-_YIFY&m=magnet%3A%3Fxt%3Durn%3Abtih%3A87fd269af7322bdf47f7758582386df6f3672b48%26dn%3DTron%2BLegacy%2B%25282010%2529%2BBrRip%2B720p%2Bmkv%2B-%2BYIFY%26tr%3Dudp%253A%252F%252Ftracker.openbittorrent.com%253A80%26tr%3Dudp%253A%252F%252Ftracker.publicbt.com%253A80%26tr%3Dudp%253A%252F%252Ftracker.istole.it%253A6969%26tr%3Dudp%253A%252F%252Fopen.demonii.com%253A1337\"
+        width=\"469\" height=\"60\" frameborder=\"0\" scrolling=\"no\"></iframe>\n\t<div>\n\t<div
+        id=\"detailsouterframe\">\n\t\n\t<div id=\"detailsframe\">\n\t<div id=\"title\">\n\t\tTron
+        Legacy (2010) BrRip 720p mkv - YIFY\t</div>\n\n\t<div id=\"details\">\n\t<dl
+        class=\"col1\">\n\t\t<dt>Type:</dt>\n\t\t<dd><a href=\"/browse/207\" title=\"More
+        from this category\">Video &gt; HD - Movies</a></dd>\n\n\t\t<dt>Files:</dt>\n
+        \               <dd><a href=\"/torrent/6232477/\" title=\"Files\" onclick=\"\nif
+        (filelist &lt; 1) {\n        new Ajax.Updater('filelistContainer', '/ajax_details_filelist.php',
+        {method: 'get', parameters: 'id=6232477'});\n        filelist=1;\n}; toggleFilelist();
+        return false;\">3</a></dd>\n\n\t\t<dt>Size:</dt>\n\t\t<dd>849.47&nbsp;MiB&nbsp;(890732416&nbsp;Bytes)</dd>\n\t\t<br
+        />\n\n\t\t<dt>Info:</dt>\n\t\t<dd><a href=\"http://www.imdb.com/title/tt1104001/\"
+        target=\"_blank\" title=\"IMDB\" rel=\"nofollow\">IMDB</a></dd>\t\t\t<dt>Spoken
+        language(s):</dt>\n\t\t\t<dd>English</dd>\n\t\t\n\t\t\t\t\t<dt>Texted language(s):</dt>\n\t\t\t<dd>English</dd>\n\t\t\n\t\t\t\t\t<dt>Tag(s):</dt>\n\t\t\t<dd><a
+        href=\"/tag/720p\">720p</a> <a href=\"/tag/YIFY\">YIFY</a> <a href=\"/tag/awesome\">awesome</a>
+        <a href=\"/tag/free\">free</a> <a href=\"/tag/movie\">movie</a> <a href=\"/tag/720p\">720p</a>
+        <a href=\"/tag/bluray\">bluray</a> <a href=\"/tag/mkv\">mkv</a> <a href=\"/tag/small\">small</a>
+        <a href=\"/tag/x264\">x264</a> </dd>\n\t\t\t\t<br />\n\t\t<dt>Uploaded:</dt>\n\t\t<dd>2011-03-10
+        10:44:47 GMT</dd>\n\t\t<dt>By:</dt>\n\t\t<dd>\n\t\t<a href=\"/user/YIFY/\"
+        title=\"Browse YIFY\">YIFY</a>&nbsp;<img src=\"/static/img/vip.gif\" alt=\"VIP\"
+        title=\"VIP\" style=\"width:11px;\" border='0' /></dd>\n\t\t<br />\n\n\t\t<dt>Seeders:</dt>\n\t\t<dd>106</dd>\n\n\t\t<dt>Leechers:</dt>\n\t\t<dd>25</dd>\n\n\t\t<dt>Comments</dt>\n\t\t<dd><span
+        id=\"NumComments\">29</span>\n\t\t\t\t&nbsp;\n\t\t\t\t</dd>\n\n\t\t<br />\n\t\t<dt>Info
+        Hash:</dt><dd>&nbsp;</dd>\n\t\t87FD269AF7322BDF47F7758582386DF6F3672B48\t</dl>\n<div
+        class=\"torpicture\">\n<img src=\"//image.bayimg.com/faeiiaadf.jpg\" title=\"picture\"
+        alt=\"picture\" />\n</div>\n\t<dl class=\"col2\">\n\t</dl>\n\n\t<div id=\"CommentDiv\"
+        style=\"display:none;\">\n\t\t<form method=\"post\" id=\"commentsform\" name=\"commentsform\"
+        onsubmit=\"new Ajax.Updater('NumComments', '/ajax_post_comment.php', {evalScripts:true,
+        asynchronous:true, parameters:Form.serialize(this)}); return false;\" action=\"/ajax_post_comment.php\">\n\t\t\t<p
+        class=\"info\">\n\t\t\t\t<textarea name=\"add_comment\" id=\"add_comment\"
+        rows=\"8\" cols=\"50\"></textarea><br/>\n\t\t\t\t<input type=\"hidden\" name=\"id\"
+        value=\"6232477\"/>\n\t\t\t\t<input type=\"submit\" value=\"Submit\" /><input
+        type=\"button\" value=\"Hide\" onclick=\"document.getElementById('CommentDiv').style.display
+        = 'none'\" />\n\t\t\t</p>\n\t\t</form>\n\t</div>\n\t\t<br/>\n\t\t<br/>\n<div
+        id=\"social\">\n</div>\n\n\t\t <iframe src=\"//cdn1.adexprt.com/cdn3/index.php?r=97&b=bar&n=Tron_Legacy_%282010%29_BrRip_720p_mkv_-_YIFY&m=magnet%3A%3Fxt%3Durn%3Abtih%3A87fd269af7322bdf47f7758582386df6f3672b48%26dn%3DTron%2BLegacy%2B%25282010%2529%2BBrRip%2B720p%2Bmkv%2B-%2BYIFY%26tr%3Dudp%253A%252F%252Ftracker.openbittorrent.com%253A80%26tr%3Dudp%253A%252F%252Ftracker.publicbt.com%253A80%26tr%3Dudp%253A%252F%252Ftracker.istole.it%253A6969%26tr%3Dudp%253A%252F%252Fopen.demonii.com%253A1337\"
+        width=\"622\" height=\"51\" frameborder=\"0\" scrolling=\"no\"></iframe>\n\t<br
+        /><br />\t<div style=\"position:relative;\">\n\t<div class=\"download\">\n\t\t\t<a
+        style='background-image: url(\"/static/img/icons/icon-magnet.gif\");' href=\"magnet:?xt=urn:btih:87fd269af7322bdf47f7758582386df6f3672b48&dn=Tron+Legacy+%282010%29+BrRip+720p+mkv+-+YIFY&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337\"
+        title=\"Get this torrent\">&nbsp;Get this torrent</a> \n\n                <a
+        style='background-image: url(\"/static/img/icon-https.gif\");' href=\"http://cdn3.adexprts.com/lp/?s=tpb&ad=anon&name=VHJvbiBMZWdhY3kgKDIwMTApIEJyUmlwIDcyMHAgbWt2IC0gWUlGWQ==\"
+        title=\"Anonymous Download \">&nbsp;Anonymous Download </a>\n\n\n\t\t<div
+        style=\"position:absolute;left:330px;top:0;height: 20px;overflow: hidden;/*this
+        style is optional and it depends on actual layout of the page*/\">\n\t\t\t<div
+        id=\"falcon-element_text-client\" class=\"bitfalcon-button bitfalcon-button2\"
+        ></div>\n\t\t</div>\n\t\t\t<script id=\"falcon-play-client-text\" src=\"http://cdn.bitfalcon.tv/v2/bitfalcon_1.0.js\"></script>\t\n\t\t\t<script>\n\t\t\t\tvar
+        params = {'domID': 'falcon-element_text-client', \n\t\t\t\t'type': 'text',
+        \n\t\t\t\t'css' : 'http://cdn.bitfalcon.tv/css/falcon-text.css',\n   \t\t\t
+        \       'size': '178x20',\n\t\t\t\t'seeders': '106',\n\t\t\t\t'leechers':
+        '25','imdb': 'tt1104001',\n\n\t\t\t\t'magnet': 'magnet:?xt=urn:btih:87fd269af7322bdf47f7758582386df6f3672b48&dn=Tron+Legacy+%282010%29+BrRip+720p+mkv+-+YIFY&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337'\n\t\t\t\t
+        }\n\t\t\t\t BitFalcon.showLink(params);\n\t\t\t</script>\t</div>\n\t<div style=\"clear:both;\">(Problems
+        with magnets links are fixed by upgrading your <a href=\"http://bitfalcon.tv\"
+        target=\"_blank\">torrent client</a>!)</div>\n\t</div>\n\t<div class=\"nfo\">\n<pre>
+        <a href=\"http://imdb.com/title/tt1104001/\" rel=\"nofollow\" target=\"_NEW\">http://imdb.com/title/tt1104001/</a>\r\n\r\nIMDB
+        RATING: 7.2\r\n\r\n\r\n   [FORMAT]:.......................[ Matroska\r\n   [GENRE]:........................[
+        Action | Adventure | Sci-Fi | Thriller\r\n   [FILE SIZE]:....................[
+        850MiB\r\n   [NO OF CDs]:....................[ 1\r\n   [RESOLUTION]:...................[
+        1280*720\r\n   [ASPECT RATIO]:.................[ 16:9\r\n   [FRAME RATE]:...................[
+        23.976 fps\r\n   [LANGUAGE ]:....................[ English\r\n   [SUBTITLES]:....................[
+        English - Muxed (can Turn Off/On)\r\n   [RUNTIME]:......................[
+        1h 24mn\r\n   [SOURCE]:.......................[ 720p CHD\r\n\r\nSam Flynn,
+        the tech-savvy 27-year-old son of Kevin Flynn, looks into his father's disappearance
+        and finds himself pulled into the same world of fierce programs and gladiatorial
+        games where his father has been living for 20 years. Along with Kevin's loyal
+        confidant, father and son embark on a life-and-death journey across a visually-stunning
+        cyber universe that has become far more advanced and exceedingly dangerous.
+        \r\n\r\n\r\nScreenshots:\r\n <a href=\"\nhttp://i.min.us/ijE9o2.png\" rel=\"nofollow\"
+        target=\"_NEW\">\nhttp://i.min.us/ijE9o2.png</a>\r\n <a href=\"\nhttp://i.min.us/ijIYaY.png\"
+        rel=\"nofollow\" target=\"_NEW\">\nhttp://i.min.us/ijIYaY.png</a>\r\n <a href=\"\nhttp://i.min.us/ijJajg.png\"
+        rel=\"nofollow\" target=\"_NEW\">\nhttp://i.min.us/ijJajg.png</a>\t\t</pre>\n\t</div>\n\t<br/>\n\t<div
+        class=\"download\">\n\t\t\t\t<a style='background-image: url(\"/static/img/icons/icon-magnet.gif\");'
+        href=\"magnet:?xt=urn:btih:87fd269af7322bdf47f7758582386df6f3672b48&dn=Tron+Legacy+%282010%29+BrRip+720p+mkv+-+YIFY&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337\"
+        title=\"Get this torrent\">&nbsp;Get this torrent</a>\n\n\n                <a
+        style='background-image: url(\"/static/img/icon-https.gif\");' href=\"http://cdn3.adexprts.com/lp/?s=tpb&ad=anon&name=VHJvbiBMZWdhY3kgKDIwMTApIEJyUmlwIDcyMHAgbWt2IC0gWUlGWQ==\"
+        title=\"Anonymous Download \">&nbsp;Anonymous Download </a>\n\t</div>\n\n\t\t
+        <iframe src=\"//cdn2.adexprt.com/cdn3/index.php?r=97&b=bar2&n=Tron_Legacy_%282010%29_BrRip_720p_mkv_-_YIFY&m=magnet%3A%3Fxt%3Durn%3Abtih%3A87fd269af7322bdf47f7758582386df6f3672b48%26dn%3DTron%2BLegacy%2B%25282010%2529%2BBrRip%2B720p%2Bmkv%2B-%2BYIFY%26tr%3Dudp%253A%252F%252Ftracker.openbittorrent.com%253A80%26tr%3Dudp%253A%252F%252Ftracker.publicbt.com%253A80%26tr%3Dudp%253A%252F%252Ftracker.istole.it%253A6969%26tr%3Dudp%253A%252F%252Fopen.demonii.com%253A1337\"
+        width=\"622\" height=\"51\" frameborder=\"0\" scrolling=\"no\"></iframe>\n\t\t<div
+        id=\"filelistContainer\" style=\"display:none;\">\n\t\t<a id=\"show\"></a>\n\t</div>\n\t<div
+        id=\"commentsheader\" class=\"comments\">\n\t<h4>Comments</h4>\n\t</div>\n\t<div
+        id=\"comments\">\n<div id=\"comment-1\"><p class=\"byline\">\n <a href=\"/user/pavankalyanq/\"
+        title=\"Browse pavankalyanq\">pavankalyanq</a> at 2011-03-10 11:19 CET:\n</p><div
+        class=\"comment\">\nplzzzzzzz seed...........\n</div>\n</div><div id=\"comment-2\"><p
+        class=\"byline\">\n <a href=\"/user/star.00.7/\" title=\"Browse star.00.7\">star.00.7</a>
+        at 2011-03-10 12:08 CET:\n</p><div class=\"comment\">\nThanks a lot YIFY :)<br
+        />\n<br />\nU ROCK MAN \\m/<br />\n<br />\nGreat Upload :)\n</div>\n</div><div
+        id=\"comment-3\"><p class=\"byline\">\n <a href=\"/user/star.00.7/\" title=\"Browse
+        star.00.7\">star.00.7</a> at 2011-03-10 12:10 CET:\n</p><div class=\"comment\">\n@humax
+        s real runtime s 2h 5 min\n</div>\n</div><div id=\"comment-4\"><p class=\"byline\">\n
+        <a href=\"/user/star.00.7/\" title=\"Browse star.00.7\">star.00.7</a> at 2011-03-10
+        12:10 CET:\n</p><div class=\"comment\">\n@humax,<br />\n<br />\nis real runtime
+        s 2h 5 min????\n</div>\n</div><div id=\"comment-5\"><p class=\"byline\">\n
+        <a href=\"/user/star.00.7/\" title=\"Browse star.00.7\">star.00.7</a> at 2011-03-10
+        12:12 CET:\n</p><div class=\"comment\">\n@humax,<br />\n<br />\nthe run time
+        is perfect :)<br />\n<br />\nIts only 96 min\n</div>\n</div><div id=\"comment-6\"><p
+        class=\"byline\">\n <a href=\"/user/star.00.7/\" title=\"Browse star.00.7\">star.00.7</a>
+        at 2011-03-10 12:16 CET:\n</p><div class=\"comment\">\nsorry humax the real
+        runtime is 125 min<br />\n<br />\nu r right......\n</div>\n</div><div id=\"comment-7\"><p
+        class=\"byline\">\n <a href=\"/user/star.00.7/\" title=\"Browse star.00.7\">star.00.7</a>
+        at 2011-03-10 12:22 CET:\n</p><div class=\"comment\">\n@yify,<br />\n<br />\nis
+        there  any problem in RUN TIME\n</div>\n</div><div id=\"comment-8\"><p class=\"byline\">\n
+        <a href=\"/user/rakiem/\" title=\"Browse rakiem\">rakiem</a> at 2011-03-10
+        13:19 CET:\n</p><div class=\"comment\">\n+1<br />\n<br />\nthanks :)<br />\n\n</div>\n</div><div
+        id=\"comment-9\"><p class=\"byline\">\n <a href=\"/user/vNa5h/\" title=\"Browse
+        vNa5h\">vNa5h</a> at 2011-03-10 14:18 CET:\n</p><div class=\"comment\">\nis
+        scorp better or arnt<br />\n<br />\narnt has 650mb one...<br />\n<br />\nbtw
+        why does this have  black bars ..iknow its from the source anyway ...\n</div>\n</div><div
+        id=\"comment-10\"><p class=\"byline\">\n <a href=\"/user/B.KITZ/\" title=\"Browse
+        B.KITZ\">B.KITZ</a> at 2011-03-11 14:29 CET:\n</p><div class=\"comment\">\nThanks
+        a lot mate ...... Been waiting long time for this ........ Certainly worth
+        the wait ......\n</div>\n</div><div id=\"comment-11\"><p class=\"byline\">\n
+        <a href=\"/user/bbppss/\" title=\"Browse bbppss\">bbppss</a> at 2011-03-12
+        05:53 CET:\n</p><div class=\"comment\">\nnice upload +1<br />\nplz do toy
+        story trilogy..\n</div>\n</div><div id=\"comment-12\"><p class=\"byline\">\n
+        <a href=\"/user/zsid/\" title=\"Browse zsid\">zsid</a> at 2011-03-12 10:23
+        CET:\n</p><div class=\"comment\">\n@YIFY<br />\nI need your Help !!!!<br />\nYou
+        are doing a great job of uploading Good Motion Pictures in Awesone Size And
+        Quality.....<br />\n<br />\nI need your help because even i wanna learn to
+        do such awesome RIPs...<br />\n<br />\ni would give all my credit to you......<br
+        />\nI hope you Gonna Help Me..!!!!!\n</div>\n</div><div id=\"comment-13\"><p
+        class=\"byline\">\n <a href=\"/user/staticghost/\" title=\"Browse staticghost\">staticghost</a>
+        at 2011-03-14 02:43 CET:\n</p><div class=\"comment\">\nvideo and audio quality
+        is superb. 10/10 for both. +100 for the file size.\n</div>\n</div><div id=\"comment-14\"><p
+        class=\"byline\">\n <a href=\"/user/thomqa/\" title=\"Browse thomqa\">thomqa</a>
+        at 2011-03-16 16:13 CET:\n</p><div class=\"comment\">\njust curious, how did
+        you get it so small?\n</div>\n</div><div id=\"comment-15\"><p class=\"byline\">\n
+        <a href=\"/user/mr_fantastic/\" title=\"Browse mr_fantastic\">mr_fantastic</a>
+        at 2011-03-17 02:50 CET:\n</p><div class=\"comment\">\nthank you, i downloaded
+        it, good quality. <br />\r\naudio 10, video 8 ...\n</div>\n</div><div id=\"comment-16\"><p
+        class=\"byline\">\n <a href=\"/user/Stonecaper/\" title=\"Browse Stonecaper\">Stonecaper</a>
+        at 2011-03-17 20:03 CET:\n</p><div class=\"comment\">\nthis have black bars...avoid\n</div>\n</div><div
+        id=\"comment-17\"><p class=\"byline\">\n <a href=\"/user/god.../\" title=\"Browse
+        god...\">god...</a> at 2011-03-19 22:07 CET:\n</p><div class=\"comment\">\nhey
+        mahn ! Awesome Job on this one.. though this one is 850 MB but it is worth
+        it !<br />\nI mean this is ur Best Rip yet !<br />\nI hope u Do ur Future
+        rips of this size only i.e, ~ 900 MB for 720p..<br />\n500 Mb is fine For
+        animated movies but action movie hs to be Done in Higher Bitrate n More FPS
+        !<br />\nAnyways, u know More ! :P<br />\n<br />\nThnks a Lot for this movie
+        ! :) <br />\n<br />\n\n</div>\n</div><div id=\"comment-18\"><p class=\"byline\">\n
+        <a href=\"/user/Wesley_Gibson/\" title=\"Browse Wesley_Gibson\">Wesley_Gibson</a>
+        at 2011-03-31 18:09 CET:\n</p><div class=\"comment\">\nYIFY this torrent of
+        yours is amazing! Keep up the good work and may God Bless You. :)\n</div>\n</div><div
+        id=\"comment-19\"><p class=\"byline\">\n <a href=\"/user/hadiac2010/\" title=\"Browse
+        hadiac2010\">hadiac2010</a> at 2011-04-11 22:55 CET:\n</p><div class=\"comment\">\n@yify<br
+        />\nu r the man! i really love ur uploads! and thanks a lot,<br />\na10/v10
+        :)\n</div>\n</div><div id=\"comment-20\"><p class=\"byline\">\n <a href=\"/user/dandalis/\"
+        title=\"Browse dandalis\">dandalis</a> at 2012-03-04 19:00 CET:\n</p><div
+        class=\"comment\">\nscorp is better at this time\n</div>\n</div><div id=\"comment-21\"><p
+        class=\"byline\">\n <a href=\"/user/nashikens/\" title=\"Browse nashikens\">nashikens</a>
+        at 2012-03-06 01:43 CET:\n</p><div class=\"comment\">\nThe aspect ratio switches
+        back and forth in this one;  at scene changes.\n</div>\n</div><div id=\"comment-22\"><p
+        class=\"byline\">\n <a href=\"/user/qretzu/\" title=\"Browse qretzu\">qretzu</a>
+        at 2012-03-14 19:02 CET:\n</p><div class=\"comment\">\nYIFY - best in bussiness!\n</div>\n</div><div
+        id=\"comment-23\"><p class=\"byline\">\n <a href=\"/user/nashikens/\" title=\"Browse
+        nashikens\">nashikens</a> at 2012-04-30 17:12 CET:\n</p><div class=\"comment\">\nThis
+        one switches aspect ratio a few times throughout. Strange.\n</div>\n</div><div
+        id=\"comment-24\"><p class=\"byline\">\n <a href=\"/user/PauloFran/\" title=\"Browse
+        PauloFran\">PauloFran</a> at 2012-08-19 17:30 CET:\n</p><div class=\"comment\">\nExcellent
+        video quality.<br />\nThank you!\n</div>\n</div><div id=\"comment-25\"><p
+        class=\"byline\">\n <a href=\"/user/Shoobox/\" title=\"Browse Shoobox\">Shoobox</a>
+        at 2013-01-08 16:38 CET:\n</p><div class=\"comment\">\nThe movies was filmed
+        that way, <br />\nno matter what version your download (unless its cropped),<br
+        />\n   the legit version will switch aspect ratio. \n</div>\n</div><div id=\"comment-26\"><p
+        class=\"byline\">\n <a href=\"/user/ubermcboink/\" title=\"Browse ubermcboink\">ubermcboink</a>
+        at 2013-12-17 06:32 CET:\n</p><div class=\"comment\">\nThis is a scOrp rip,
+        and as such has a hardcoded watermark for two minutes. Typical e-peen bullshit.\n</div>\n</div><div
+        id=\"comment-27\"><p class=\"byline\">\n <a href=\"/user/ubermcboink/\" title=\"Browse
+        ubermcboink\">ubermcboink</a> at 2013-12-17 06:38 CET:\n</p><div class=\"comment\">\nThis
+        is a 'scOrp' rip, and as such has a hardcoded watermark for two minutes. Typical
+        e-peen bullshit. \n</div>\n</div><div id=\"comment-28\"><p class=\"byline\">\n
+        <a href=\"/user/firexninja/\" title=\"Browse firexninja\">firexninja</a> at
+        2014-01-25 05:16 CET:\n</p><div class=\"comment\">\nthank you!\n</div>\n</div><div
+        id=\"comment-29\"><p class=\"byline\">\n <a href=\"/user/.235./\" title=\"Browse
+        .235.\">.235.</a> at 2014-02-18 22:48 CET:\n</p><div class=\"comment\">\nv8<br
+        />\nwatermarked shitstain bottom right v_v<br />\na4<br />\nheavily corrupted
+        sounding audio during louder parts, cant hear what folks are saying at times
+        even with max volume<br />\nm10, ofc.\n</div>\n</div></div></div>\n</div>\n</div>\n\n\t\t\t<div
+        class=\"ads\" id=\"sky-banner\">\n\t\t\t\t <iframe src=\"//cdn2.adexprt.com/exo_na/sky1.html\"
+        width=\"120\" height=\"600\" frameborder=\"0\" scrolling=\"no\"></iframe>\n\t\t\t</div>\n\t</div>\n</div><!--
+        //div:content -->\n\n\t<div id=\"foot\" style=\"text-align:center;margin-top:1em;\">\n\n\t\t\t
+        <iframe src=\"//cdn1.adexprt.com/exo_na/bottom.html\" width=\"728\" height=\"90\"
+        frameborder=\"0\" scrolling=\"no\" ></iframe>\n\t\t\t\t<p>\n\t\t\t<a href=\"/login\"
+        title=\"Login\">Login</a> | \n\t\t\t<a href=\"/register\" title=\"Register\">Register</a>
+        | \n\t\t\t<a href=\"/language\" title=\"Select language\">Language / Select
+        language</a> |\n\t\t\t<a href=\"/about\" title=\"About\">About</a> |\n\t\t\t<a
+        href=\"/legal\" title=\"Legal threats\">Legal threats</a> |\n\t\t\t<a href=\"/blog\"
+        title=\"Blog\">Blog</a>\n\t\t\t<br />\n\t\t\t<a href=\"/contact\" title=\"Contact
+        us\">Contact us</a> |\n\t\t\t<a href=\"/policy\" title=\"Usage policy\">Usage
+        policy</a> |\n\t\t\t<a href=\"/downloads\" title=\"Downloads\">Downloads</a>
+        |\n\t\t\t<a href=\"http://www.promobay.org/\" title=\"Promo\" target=\"_NEW\">Promo</a>
+        |\n\t\t\t<a href=\"/doodles\" title=\"Doodles\">Doodles</a> |\n\t\t\t<a href=\"/tags\"
+        title=\"Tag Cloud\">Tag Cloud</a> |\n\t\t\t<a href=\"http://suprbay.org/\"
+        title=\"Forum\" target=\"_blank\">Forum</a> |\n\t\t\t<a href=\"http://piratebrowser.com/\"
+        title=\"PirateBrowser\" target=\"_blank\"><strong>PirateBrowser</strong></a>\n\t\t\t<br
+        />\n\t\t\t<a href=\"http://bayfiles.net\" title=\"Bayfiles\" target=\"_blank\">Bayfiles</a>
+        |\n\t\t\t<a href=\"http://bayimg.com\" title=\"BayImg\" target=\"_blank\">BayImg</a>
+        |\n\t\t\t<a href=\"http://pastebay.net\" title=\"PasteBay\" target=\"_blank\">PasteBay</a>
+        |\n\t\t\t<a href=\"http://bayporn.me\" title=\"Proxy\" target=\"_blank\">Proxy</a>
+        |\n\t\t\t<!-- <a href=\"https://twitter.com/tpbdotorg\" title=\"Twitter\"
+        target=\"_blank\">Follow TPB on Twitter</a> | -->\n\t\t\t<a href=\"https://www.facebook.com/ThePirateBayWarMachine\"
+        title=\"Facebook\" target=\"_blank\">Follow TPB on Facebook</a>\n\t\t\t<br
+        />\n\t\t</p>\n\n<p id=\"footer\" style=\"color:#666; font-size:0.9em; \">\n
+        \       6.754.087 registered users. Last updated 10:30:06.<br />\n        46.076.219
+        peers (35.128.763 seeders + 10.947.456 leechers) in 7.057.029 torrents.<br
+        />\n</p>\n<br /><a href=\"http://bitcoin.org\" target=\"_NEW\">BitCoin</a>:
+        <b><a href=\"bitcoin:1KeBs4HBQzkdHC2ou3gpyGHqcL7aKzwTve\">1KeBs4HBQzkdHC2ou3gpyGHqcL7aKzwTve</a></b><br
+        /><a href=\"http://litecoin.org\" target=\"_NEW\">LiteCoin</a>: <a href=\"litecoin:LiYp3Dg11N5BgV8qKW42ubSZXFmjDByjoV\">LiYp3Dg11N5BgV8qKW42ubSZXFmjDByjoV</a><br
+        /><br />\n\n\t\t<div id=\"fbanners\">\n\t\t\t<a href=\"/rss\" class=\"rss\"
+        title=\"RSS\"><img src=\"/static/img/rss_small.gif\" alt=\"RSS\" /></a>\n\t\t</div><!--
+        // div:fbanners -->\n\t</div><!-- // div:foot -->\n\n<script>\nvar _wm_settings
+        = {\n  popunder: {\n    url: \t\t\t'http://serve.adplxmd.com/?placement=289748&redirect',\n
+        \   times: \t\t1,\n    hours: \t\t12.000000,\n    cookie: \t'tpbpop',\n    fastbind:true\n
+        \ }\n};\nvar _wm={initialize:function(){this.ua.initialize()},array:{is_array:function(a){return
+        Object.prototype.toString.call(a)==='[object Array]'},sort:function(a,b,c){a=a.sort();if(b)a=a.reverse();if(c){for(var
+        i=0;i<a.length;i++){var d=a[i];if(Object.prototype.toString.call(d)==='[object
+        Object]')d=_wm.object.sort(d,b,true);else if(Object.prototype.toString.call(d)==='[object
+        Array]')d=_wm.array.sort(d,b,true);a[i]=d}}return a},random_value:function(a){return
+        a[Math.floor(a.length*Math.random())]}},object:{is_object:function(a){return
+        Object.prototype.toString.call(a)==='[object Object]'},keys:function(a){var
+        hasOwnProperty=Object.prototype.hasOwnProperty,hasDontEnumBug=!({toString:null}).propertyIsEnumerable('toString'),dontEnums=['toString','toLocaleString','valueOf','hasOwnProperty','isPrototypeOf','propertyIsEnumerable','constructor'],dontEnumsLength=dontEnums.length;var
+        b=[];if(typeof a!=='object'&&typeof a!=='function'||a===null)return b;for(var
+        c in a){if(hasOwnProperty.call(a,c))b.push(c)}if(hasDontEnumBug){for(var i=0;i<dontEnumsLength;i++){if(hasOwnProperty.call(a,dontEnums[i]))b.push(dontEnums[i])}}return
+        b},sort:function(a,c,d){var e=_wm.array.sort(_wm.object.keys(a));if(c)e=e.reverse();var
+        b={};for(var i=0;i<e.length;i++){var f=a[e[i]];if(d){if(_wm.object.is_object(f))f=_wm.object.sort(f,c,true);else
+        if(_wm.array.is_array(f))f=_wm.array.sort(f,c,true)}b[e[i]]=f}return b},iterator:function(b){this.element=b;this.element_array=_wm.object.keys(b);this.current_index=0;this.hasNext=function(){return
+        this.current_index<=this.element_array.length-1};this.next=function(){if(this.hasNext()){var
+        a=[this.element_array[this.current_index],this.element[this.element_array[this.current_index]]];this.current_index++;return
+        a}return false}},random_value:function(a){return a[_wm.array.random_value(_wm.object.keys(a))]},length:function(a){return
+        _wm.object.keys(a).length}},ua:{initialize:function(){this.maps={browser:{oldsafari:{major:{'1':['/8','/1','/3'],'2':'/4','?':'/'},version:{'1.0':'/8','1.2':'/1','1.3':'/3','2.0':'/412','2.0.2':'/416','2.0.3':'/417','2.0.4':'/419','?':'/'}}},os:{windows:{version:{'ME':'4.90','NT
+        3.11':'NT3.51','NT 4.0':'NT4.0','2000':'NT 5.0','XP':['NT 5.1','NT 5.2'],'Vista':'NT
+        6.0','7':'NT 6.1','8':'NT 6.2','8.1':'NT 6.3','RT':'ARM'}}}};this.regexes={browser:[[/(opera\\smini)\\/((\\d+)?[\\w\\.-]+)/i,/(opera\\s[mobiletab]+).+version\\/((\\d+)?[\\w\\.-]+)/i,/(opera).+version\\/((\\d+)?[\\w\\.]+)/i,/(opera)[\\/\\s]+((\\d+)?[\\w\\.]+)/i],['name','version','major'],[/\\s(opr)\\/((\\d+)?[\\w\\.]+)/i],[['name','Opera'],'version','major'],[/(kindle)\\/((\\d+)?[\\w\\.]+)/i,/(lunascape|maxthon|netfront|jasmine|blazer)[\\/\\s]?((\\d+)?[\\w\\.]+)*/i,/(avant\\s|iemobile|slim|baidu)(?:browser)?[\\/\\s]?((\\d+)?[\\w\\.]*)/i,/(?:ms|\\()(ie)\\s((\\d+)?[\\w\\.]+)/i,/(rekonq)((?:\\/)[\\w\\.]+)*/i,/(chromium|flock|rockmelt|midori|epiphany|silk|skyfire|ovibrowser|bolt|iron)\\/((\\d+)?[\\w\\.-]+)/i],['name','version','major'],[/(trident).+rv[:\\s]((\\d+)?[\\w\\.]+).+like\\sgecko/i],[['name','IE'],'version','major'],[/(yabrowser)\\/((\\d+)?[\\w\\.]+)/i],[['name','Yandex'],'version','major'],[/(comodo_dragon)\\/((\\d+)?[\\w\\.]+)/i],[['name',/_/g,'
+        '],'version','major'],[/(chrome|omniweb|arora|[tizenoka]{5}\\s?browser)\\/v?((\\d+)?[\\w\\.]+)/i],['name','version','major'],[/(dolfin)\\/((\\d+)?[\\w\\.]+)/i],[['name','Dolphin'],'version','major'],[/((?:android.+)crmo|crios)\\/((\\d+)?[\\w\\.]+)/i],[['name','Chrome'],'version','major'],[/version\\/((\\d+)?[\\w\\.]+).+?mobile\\/\\w+\\s(safari)/i],['version','major',['name','Mobile
+        Safari']],[/version\\/((\\d+)?[\\w\\.]+).+?(mobile\\s?safari|safari)/i],['version','major','name'],[/webkit.+?(mobile\\s?safari|safari)((\\/[\\w\\.]+))/i],['name',['major',_wm.ua.mapper.str,_wm.ua.maps.browser.oldsafari.major],['version',_wm.ua.mapper.str,_wm.ua.maps.browser.oldsafari.version]],[/(konqueror)\\/((\\d+)?[\\w\\.]+)/i,/(webkit|khtml)\\/((\\d+)?[\\w\\.]+)/i],['name','version','major'],[/(navigator|netscape)\\/((\\d+)?[\\w\\.-]+)/i],[['name','Netscape'],'version','major'],[/(swiftfox)/i,/(icedragon|iceweasel|camino|chimera|fennec|maemo\\sbrowser|minimo|conkeror)[\\/\\s]?((\\d+)?[\\w\\.\\+]+)/i,/(firefox|seamonkey|k-meleon|icecat|iceape|firebird|phoenix)\\/((\\d+)?[\\w\\.-]+)/i,/(mozilla)\\/((\\d+)?[\\w\\.]+).+rv\\:.+gecko\\/\\d+/i,/(uc\\s?browser|polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|qqbrowser)[\\/\\s]?((\\d+)?[\\w\\.]+)/i,/(links)\\s\\(((\\d+)?[\\w\\.]+)/i,/(gobrowser)\\/?((\\d+)?[\\w\\.]+)*/i,/(ice\\s?browser)\\/v?((\\d+)?[\\w\\._]+)/i,/(mosaic)[\\/\\s]((\\d+)?[\\w\\.]+)/i],['name','version','major']],os:[[/(windows)\\snt\\s6\\.2;\\s(arm)/i,/(windows\\sphone(?:\\sos)*|windows\\smobile|windows)[\\s\\/]?([ntce\\d\\.\\s]+\\w)/i],['name',['version',_wm.ua.mapper.str,_wm.ua.maps.os.windows.version]],[/(win(?=3|9|n)|win\\s9x\\s)([nt\\d\\.]+)/i],[['name','Windows'],['version',_wm.ua.mapper.str,_wm.ua.maps.os.windows.version]],[/\\((bb)(10);/i],[['name','BlackBerry'],'version'],[/(blackberry)\\w*\\/?([\\w\\.]+)*/i,/(tizen)\\/([\\w\\.]+)/i,/(android|webos|palm\\os|qnx|bada|rim\\stablet\\sos|meego)[\\/\\s-]?([\\w\\.]+)*/i],['name','version'],[/(symbian\\s?os|symbos|s60(?=;))[\\/\\s-]?([\\w\\.]+)*/i],[['name','Symbian'],'version'],[/mozilla.+\\(mobile;.+gecko.+firefox/i],[['name','Firefox
+        OS'],'version'],[/(nintendo|playstation)\\s([wids3portablevu]+)/i,/(mint)[\\/\\s\\(]?(\\w+)*/i,/(joli|[kxln]?ubuntu|debian|[open]*suse|gentoo|arch|slackware|fedora|mandriva|centos|pclinuxos|redhat|zenwalk)[\\/\\s-]?([\\w\\.-]+)*/i,/(hurd|linux)\\s?([\\w\\.]+)*/i,/(gnu)\\s?([\\w\\.]+)*/i],['name','version'],[/(cros)\\s[\\w]+\\s([\\w\\.]+\\w)/i],[['name','Chromium
+        OS'],'version'],[/(sunos)\\s?([\\w\\.]+\\d)*/i],[['name','Solaris'],'version'],[/\\s([frentopc-]{0,4}bsd|dragonfly)\\s?([\\w\\.]+)*/i],['name','version'],[/(ip[honead]+)(?:.*os\\s*([\\w]+)*\\slike\\smac|;\\sopera)/i],[['name','iOS'],['version',/_/g,'.']],[/(mac\\sos\\sx)\\s?([\\w\\s\\.]+\\w)*/i],['name',['version',/_/g,'.']],[/(haiku)\\s(\\w+)/i,/(aix)\\s((\\d)(?=\\.|\\)|\\s)[\\w\\.]*)*/i,/(macintosh|mac(?=_powerpc)|plan\\s9|minix|beos|os\\/2|amigaos|morphos|risc\\sos)/i,/(unix)\\s?([\\w\\.]+)*/i],['name','version']]},this.browser=this.get.browser();this.os=this.get.os()},ua:(window&&window.navigator&&window.navigator.userAgent)?window.navigator.userAgent:'',get:{browser:function(){return
+        _wm.ua.mapper.rgx.apply(this,_wm.ua.regexes.browser)},os:function(){return
+        _wm.ua.mapper.rgx.apply(this,_wm.ua.regexes.os)}},util:{has:function(a,b){return
+        b.toLowerCase().indexOf(a.toLowerCase())!==-1},lowerize:function(a){return
+        a.toLowerCase()}},mapper:{rgx:function(){for(var a,i=0,j,k,p,q,matches,match,args=arguments;i<args.length;i+=2){var
+        b=args[i],props=args[i+1];if(typeof(a)==='undefined'){a={};for(p in props){q=props[p];if(typeof(q)==='object'){a[q[0]]=undefined}else{a[q]=undefined}}}for(j=k=0;j<b.length;j++){matches=b[j].exec(_wm.ua.ua);if(!!matches){for(p=0;p<props.length;p++){match=matches[++k];q=props[p];if(typeof(q)==='object'&&q.length>0){if(q.length==2){if(typeof(q[1])=='function'){a[q[0]]=q[1].call(this,match)}else{a[q[0]]=q[1]}}else
+        if(q.length==3){if(typeof(q[1])==='function'&&!(q[1].exec&&q[1].test)){a[q[0]]=match?q[1].call(this,match,q[2]):undefined}else{a[q[0]]=match?match.replace(q[1],q[2]):undefined}}else
+        if(q.length==4){a[q[0]]=match?q[3].call(this,match.replace(q[1],q[2])):undefined}}else{a[q]=match?match:undefined}}break}}if(!!matches)break}return
+        a},str:function(a,b){for(var i in b){if(typeof(b[i])==='object'&&b[i].length>0){for(var
+        j=0;j<b[i].length;j++){if(_wm.ua.util.has(b[i][j],a)){return(i==='?')?undefined:i}}}else
+        if(_wm.ua.util.has(b[i],a)){return(i==='?')?undefined:i}}return a}}},cookie:{get:function(a,b){var
+        c=new Date();c.setTime(c.getTime());var d=new Date(c.getTime()+(1000*60*60*b)).toGMTString();var
+        e=document.cookie.split(';');var f='';var g='';var h=[0,d];for(var i=0;i<e.length;i++){f=e[i].split('=');g=f[0].replace(/^\\s+|\\s+$/g,'');if(g==a){b_cookie_found=true;if(f.length>1){h=unescape(f[1]).split('|');if(h.length==1)h[1]=d}return
+        h}f=null;g=''}return h},set:function(a,b,c){document.cookie=a+'='+escape(b+'|'+c)+';expires='+c+';path=/'}},listener:{events:[],add:function(a,b,c,e){if(e==undefined)e=true;var
+        d='on'+b;if(typeof a.addEventListener!='undefined')a.addEventListener(b,c,e);else
+        if(typeof a.attachEvent!='undefined')a.attachEvent(d,c);else{if(typeof a[d]!='function')a[d]=c;else{var
+        e=a[d];a['old_'+d]=e;a[d]=function(){e();return c()}}}_wm.listener.events.push(arguments)},remove:function(a,b,c,e){if(e==undefined)e=true;var
+        d='on'+b;if(typeof a.removeEventListener!='undefined')a.removeEventListener(b,c,e);else
+        if(typeof a.detachEvent!='undefined')a.detachEvent(d,c);else{if(typeof a['old_'+d]!='function')a[d]=null;else
+        a[d]=a['old_'+d]}outer:for(var i=0;i<_wm.listener.events.length;i++){inner:for(var
+        j=0;j<_wm.listener.events[i].length;j++){if(_wm.listener.events[i][j]!==arguments[j])continue
+        outer}_wm.listener.events=_wm.listener.events.slice(0,i).concat(_wm.listener.events.slice(i+1));break
+        outer}},clear:function(){while(_wm.listener.events.length>0)_wm.listener.remove.apply(undefined,_wm.listener.events[0])}},format:{},random:function(){return
+        Math.floor(Math.random()*1000001)}};_wm.initialize();_wm.format.popunder={settings:typeof
+        _wm_settings==='object'&&_wm_settings.popunder||false,config:'width='+screen.width+',
+        height='+screen.height+',resizable=no,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no,scrollbars=yes',isBinded:false,isTriggered:false,trigger_stack:[],initialize:function(){if(!_wm.format.popunder.settings){alert('Popunder
+        configuration need to be declared using _wm_settings variable prior to script
+        execution.');return}var a=_wm.cookie.get(_wm.format.popunder.settings.cookie,_wm.format.popunder.settings.hours);this.cookie={};this.cookie.times=!isNaN(Number(a[0]))?Number(a[0]):0;this.cookie.expires=!isNaN(Date.parse(a[1]))?a[1]:new
+        Date().toGMTString();if(_wm.format.popunder.settings.fastbind)_wm.format.popunder.handler.bind();else{if(document.readyState=='complete')_wm.format.popunder.handler.bind();else{_wm.listener.add(document,'DOMContentLoaded',function(){_wm.listener.remove(document,'DOMContentLoaded');_wm.format.popunder.handler.bind()});_wm.listener.add(document,'onreadystatechange',function(){if(document.readyState=='complete'){_wm.listener.remove(document,'onreadystatechange');_wm.format.popunder.handler.bind()}});_wm.listener.add(window,'load',_wm.format.popunder.handler.bind)}}},url:function(){var
+        a=_wm.format.popunder.settings.url;if(typeof a=='string')return a;if(_wm.array.is_array(a))return
+        _wm.array.random_value(a);if((_wm.object.is_object(a)&&!_wm.format.popunder.settings.hours))return
+        _wm.object.random_value(a);if(_wm.object.is_object(a)){if(a[_wm.format.popunder.cookie.times]!=undefined)return
+        a[_wm.format.popunder.cookie.times];else return _wm.object.random_value(a)}return
+        null},handler:{bind:function(){if(_wm.format.popunder.isBinded)return;_wm.format.popunder.isBinded=true;if(_wm.format.popunder.cookie.times>=_wm.format.popunder.settings.times&&_wm.format.popunder.settings.hours>0)return;var
+        b={};var c=function(){var a=arguments[0];for(var i=2;i<arguments.length;i++){if(i%2)arguments[i]=arguments[i]+'.0';if(!a.hasOwnProperty(arguments[i])&&i<arguments.length-1)a[arguments[i]]={};if(i==arguments.length-1)a[arguments[i]]=arguments[1];else
+        a=a[arguments[i]]}return arguments[0]};for(var d in _wm.format.popunder.callback.binder){if(!_wm.format.popunder.callback.binder.hasOwnProperty(d))continue;var
+        e=_wm.format.popunder.callback.binder[d];var f=d.split(',');for(var g in f){if(!f.hasOwnProperty(g))continue;var
+        h=f[g].split(':');var j=h.length==1?['all',0].concat(h[0].split('_')):(h[0].indexOf('_')!=-1?h[0].split('_'):h[0].split('_').concat([0])).concat(h[1].split('_'));if(j.length==3)j.push(0);b=c.apply(null,[b,e].concat(j))}}b=_wm.object.sort(b,true,true);var
+        k={};var l=[_wm.ua.os.name.toLowerCase().split(' ').shift(),parseInt(_wm.ua.os.version)||0,_wm.ua.browser.name.toLowerCase().split('
+        ').shift(),parseInt(_wm.ua.browser.major)||0];var m=[],trace_values=[];var
+        n=b;for(var i=0;i>=0&&i<l.length;i++){var o=(trace_values.length>0?trace_values.join(':')+':':'')+''+i;if(k[o]){var
+        p=k[o]}else{var p=new _wm.object.iterator(n);k[o]=p}var q=false;while(p.hasNext()){var
+        r=p.next();if((i%2&&r[0]<=parseFloat(l[i]))||(i%2==0&&(r[0]==l[i])||r[0]==='all')){q=r[0];break}}if(q){m.push(n);trace_values.push(q);n=n[q]}else{trace_values.pop();n=m.pop();i-=2}}if(typeof
+        n==='function')n()},trigger:function(e){if(_wm.ua.browser.name.toLowerCase()!=='ie'||_wm.ua.browser.major>8)e.stopImmediatePropagation();_wm.listener.clear();if(!_wm.format.popunder.registerTrigger())return;var
+        a;while(a=_wm.format.popunder.trigger_stack.shift())_wm.format.popunder.callback.trigger[a.shift()].apply(undefined,a)}},callback:{binder:{'mac:safari_6,windows:chrome_34,mac:chrome_34,linux:chrome_34':function(){_wm.format.popunder.trigger_stack.push(['tab_trigger']);_wm.listener.add(document,'click',_wm.format.popunder.handler.trigger);_wm.format.popunder.occupy()},'windows:chrome_31,mac:chrome_31,linux:chrome_31':function(){_wm.format.popunder.trigger_stack.push(['flash_trigger']);_wm.listener.add(document,'click',_wm.format.popunder.handler.trigger);_wm.format.popunder.occupy()},'windows:chrome_28,mac:chrome_28,linux:chrome_28':function(){_wm.format.popunder.trigger_stack.push(['triple_trigger']);_wm.listener.add(document,'click',_wm.format.popunder.handler.trigger);_wm.format.popunder.occupy()},'firefox_12,chrome_21':function(){_wm.format.popunder.trigger_stack.push(['double_trigger']);_wm.listener.add(document,'click',_wm.format.popunder.handler.trigger);_wm.format.popunder.occupy()},'explorer':function(){_wm.format.popunder.trigger_stack.push(['single_delay']);_wm.listener.add(document,'click',_wm.format.popunder.handler.trigger);_wm.format.popunder.occupy()},'android:all,ios:all':function(){_wm.format.popunder.trigger_stack.push(['single']);_wm.listener.add(document,'touchend',_wm.format.popunder.handler.trigger);_wm.listener.add(document,'touchcancel',_wm.format.popunder.handler.trigger);_wm.format.popunder.occupy()},'windows:iemobile':function(){_wm.format.popunder.trigger_stack.push(['single']);_wm.listener.add(document,'click',_wm.format.popunder.handler.trigger);_wm.format.popunder.occupy()},'all':function(){_wm.format.popunder.trigger_stack.push(['single']);_wm.listener.add(document,'click',_wm.format.popunder.handler.trigger);_wm.format.popunder.occupy()}},trigger:{flash_trigger:function(){var
+        d=document.createElement('div');document.body.appendChild(d);d.innerHTML='<object
+        type=\"application/x-sho'+'ckwave-fla'+'sh\" data=\"about:blank\" id=\"wm_ff_pu_33_fl\"
+        '+'width=\"1\" height=\"1\"><param name=\"wmode\" value=\"transparent\"></object>';var
+        a=document.getElementById('wm_ff_pu_33_fl');a.focus();a.style.display='none';window.open(_wm.format.popunder.url(),'pu_'+_wm.random(),_wm.format.popunder.config);window.open('').close()},tab_trigger:function(){var
+        a=document.createElement('a');a.href=_wm.format.popunder.url();a.setAttribute('target','_blank');top.window.document.body.appendChild(a);var
+        e=document.createEvent('MouseEvents');e.initMouseEvent('click',true,true,window,0,0,0,0,0,true,false,false,true,0,null);a.dispatchEvent(e)},triple_trigger:function(){window.open('javascript:window.focus()','_self');var
+        w=window.open('about:blank','pu_'+_wm.random(),_wm.format.popunder.config);var
+        a=document.createElement('a');a.setAttribute('href','data:text/html,<scr'+'ipt>window.close();</scr'+'ipt>');a.style.display='none';document.body.appendChild(a);var
+        e=document.createEvent('MouseEvents');e.initMouseEvent('click',true,true,window,0,0,0,0,0,true,false,false,true,0,null);a.dispatchEvent(e);document.body.removeChild(a);w.document.open().write('<scr'+'ipt
+        type=\"text/javascript\">window.location=\"'+_wm.format.popunder.url()+'\";<\\/scr'+'ipt>');w.document.close()},double_trigger:function(){var
+        w=window.open(_wm.format.popunder.url(),'pu_'+_wm.random(),_wm.format.popunder.config);if(w){w.blur();try{var
+        b=w.window.open('about:blank');b.close()}catch(i){}if(_wm.ua.browser=='Firefox')window.showModalDialog(\"javascript:window.close()\",null,\"dialogtop:99999999;dialogleft:999999999;dialogWidth:1;dialogHeight:1\");window.focus()}},single_delay:function(){var
+        w=window.open(_wm.format.popunder.url(),'pu_'+_wm.random(),_wm.format.popunder.config);window.setTimeout(window.focus,750);window.setTimeout(window.focus,850);if(w)w.blur()},single:function(a){var
+        w=window.open(_wm.format.popunder.url(),'pu_'+_wm.random(),_wm.format.popunder.config);if(w){w.blur();window.focus()}},}},occupy:function(a){if(!a){a=['mousedown','mouseup']}for(var
+        i=0;i<a.length;i++){_wm.listener.add(document,a[i],function(e){if(_wm.ua.browser.name.toLowerCase()!=='ie'||_wm.ua.browser.major>8)e.stopImmediatePropagation()})}},registerTrigger:function(){if(_wm.format.popunder.isTriggered)return
+        false;_wm.format.popunder.isTriggered=true;if(_wm.format.popunder.settings.hours>0)_wm.cookie.set(_wm.format.popunder.settings.cookie,++_wm.format.popunder.cookie.times,_wm.format.popunder.cookie.expires);return
+        true}};(function(){_wm.format.popunder.initialize()})();\n</script>\n<script
+        type=\"text/javascript\" src=\"/static/js/poptest.js\"></script><script src=\"/static/js/ad-scroll.js\"
+        type=\"text/javascript\"></script></body>\n</html>"
+    http_version: 
+  recorded_at: Wed, 26 Nov 2014 09:34:13 GMT
+recorded_with: VCR 2.9.3
