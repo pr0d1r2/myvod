@@ -83,11 +83,10 @@ Myvod::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  config.magnet_download_tmp_dir = "#{ENV['HOME']}/DownloadZ"
-  config.magnet_download_tmp_dir_free_space = 500 # GB
-  config.magnet_download_finished_dir = "#{ENV['HOME']}/Downloads"
-  config.magnet_download_finished_dir_free_space = 500 # GB
+  config.magnet_download_tmp_dir = ENV['MAGNET_DOWNLOAD_TMP_DIR'] || fail
+  config.magnet_download_tmp_dir_free_space = (ENV['MAGNET_DOWNLOAD_TMP_DIR_FREE_SPACE'] || 500).to_i # GB
+  config.magnet_download_finished_dir = ENV['MAGNET_DOWNLOAD_FINISHED_DIR'] || fail
+  config.magnet_download_finished_dir_free_space = (ENV['MAGNET_DOWNLOAD_FINISHED_DIR_FREE_SPACE'] || 500).to_i # GB
 
-  config.magnet_download_timeout = 12.hours.to_i
-
+  config.magnet_download_timeout = (ENV['MAGNET_DOWNLOAD_TIMEOUT'] || 12).to_i.hours.to_i
 end

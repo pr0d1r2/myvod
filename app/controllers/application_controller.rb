@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
 
   def show_ios_videos_index
     if Video.like.count > 0
-      @videos = Video.like.recently_updated.page(params[:page])
+      @videos = Video.liked.recently_updated.page(params[:page])
       render 'videos/index'
     else
       @videos = Video.recently_updated.page(params[:page])

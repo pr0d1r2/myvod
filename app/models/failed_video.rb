@@ -5,6 +5,6 @@ class FailedVideo < ActiveRecord::Base
 
   def self.from_file(path)
     md5 = Digest::MD5.hexdigest(File.read(path))
-    find_or_create_by_md5(md5)
+    find_or_create_by(md5: md5)
   end
 end

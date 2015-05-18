@@ -25,10 +25,10 @@ Myvod::Application.configure do
   # Debug mode disables concatenation and preprocessing of assets.
   config.assets.debug = true
 
-  config.magnet_download_tmp_dir = "#{Rails.root}/tmp/development/DownloadZ"
-  config.magnet_download_tmp_dir_free_space = 2000 # GB
-  config.magnet_download_finished_dir = "#{Rails.root}/tmp/development/Downloads"
-  config.magnet_download_finished_dir_free_space = 2000 # GB
+  config.magnet_download_tmp_dir = ENV['MAGNET_DOWNLOAD_TMP_DIR'] || fail
+  config.magnet_download_tmp_dir_free_space = (ENV['MAGNET_DOWNLOAD_TMP_DIR_FREE_SPACE'] || 2000).to_i # GB
+  config.magnet_download_finished_dir = ENV['MAGNET_DOWNLOAD_FINISHED_DIR'] || fail
+  config.magnet_download_finished_dir_free_space = (ENV['MAGNET_DOWNLOAD_FINISHED_DIR_FREE_SPACE'] || 2000).to_i # GB
 
-  config.magnet_download_timeout = 12.hours.to_i
+  config.magnet_download_timeout = (ENV['MAGNET_DOWNLOAD_TIMEOUT'] || 12).to_i.hours.to_i
 end

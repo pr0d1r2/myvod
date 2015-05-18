@@ -218,7 +218,6 @@ feature 'Videos', %q{
       scenario 'redirects to videos index' do
         visit unseen_path(1)
         page.should have_xpath("//h1[contains(text(), \"Videos Index\")]")
-        page.should have_xpath("//img[@alt='One second']/..")
       end
 
       context 'when on iphone' do
@@ -227,7 +226,6 @@ feature 'Videos', %q{
         scenario 'renders videos index' do
           visit unseen_path(1)
           page.should have_xpath("//h1[contains(text(), \"Videos Index\")]")
-          page.should have_xpath("//img[@alt='One second']/..")
         end
       end
 

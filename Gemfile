@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.1'
+gem 'rails', '4.2.1'
 gem 'activerecord-deprecated_finders', github: 'rails/activerecord-deprecated_finders'
 
 gem 'pg'
@@ -9,9 +9,9 @@ gem 'pg'
 # in production environments by default.
 group :assets do
   gem 'therubyracer', :platforms => :ruby
-  gem 'sprockets-rails', github: 'rails/sprockets-rails'
-  gem 'sass-rails',   github: 'rails/sass-rails'
-  gem 'coffee-rails', github: 'rails/coffee-rails'
+  gem 'sprockets-rails'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby
@@ -63,6 +63,8 @@ gem 'workflow'
 gem 'paranoia', '~> 2.0'
 
 gem 'protected_attributes'
+
+gem 'dotenv-rails'
 
 group :development do
   gem 'foreman'

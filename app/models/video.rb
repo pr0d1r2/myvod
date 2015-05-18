@@ -60,6 +60,8 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
                     processors: [:ffmpeg, :qtfaststart],
                     styles: lambda { |v| v.instance.send(:paperclip_styles) }
 
+  do_not_validate_attachment_file_type :video
+
   CONVERTABLE_INPUT = %w(avi mp4 m4v wmv mov flv mpg mpeg rm rmvb)
 
   before_post_process :get_video_duration
@@ -78,9 +80,10 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
     where(not_seen_condition).order('videos.created_at DESC')
   }
 
+  scope :liked, -> { where(like_condition) }
+  scope :bested, -> { where(best_condition) }
   scope :not_liked, -> { where(seen_condition).where(not_like_condition) }
   scope :not_liked_lately, -> { not_liked.where('updated_at < ?', 1.hour.ago) }
-
   scope :recently_updated, -> { order('videos.updated_at DESC') }
 
   def get_video_duration
