@@ -97,4 +97,5 @@ group :test, :development do
   gem 'rails_best_practices'
   gem 'rubocop'
   gem 'gemsurance'
+  gem 'parallel_tests'
 end

@@ -9,7 +9,7 @@ development:
 
 test:
   <<: *default
-  database: myvod_test
+  database: myvod_test<%= ENV['TEST_ENV_NUMBER'] %>
 
 production:
   <<: *default
