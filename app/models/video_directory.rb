@@ -23,6 +23,8 @@ class VideoDirectory < Dir
   private
 
     def convertable_file_types
-      Video::CONVERTABLE_INPUT.map { |f| [f, f.upcase] }.flatten
+      Video::CONVERTABLE_INPUT.map do |filename|
+        [filename, filename.upcase]
+      end.flatten
     end
 end

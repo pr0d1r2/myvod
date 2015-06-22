@@ -30,7 +30,9 @@ class Keyword < ActiveRecord::Base
 
   def categories_valid
     unless categories.present? &&
-           categories.reject { |c| VALID_CATEGORIES.include?(c) }.empty?
+           categories.reject do |category|
+             VALID_CATEGORIES.include?(category)
+           end.empty?
       errors.add :categories,
                  "Must contain at least one of: #{VALID_CATEGORIES.join(', ')}"
     end

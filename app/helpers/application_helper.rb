@@ -15,7 +15,11 @@ module ApplicationHelper
   end
 
   def short_navigation_options
-    Hash[navigation_options.values.map { |o| [o[:short_name], o[:path]] }]
+    Hash[
+      navigation_options.values.map do |option|
+        [option[:short_name], option[:path]]
+      end
+    ]
   end
 
   def long_navigation_options

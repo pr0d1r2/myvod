@@ -47,7 +47,7 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
 
   THUMB_PERCENTILE = 100.0 / THUMB_COUNT
 
-  THUMBNAILS = 1.upto(THUMB_COUNT).map { |x| "thumb#{x}".to_sym }
+  THUMBNAILS = 1.upto(THUMB_COUNT).map { |number| "thumb#{number}".to_sym }
 
   INDEX_THUMBNAIL = THUMBNAILS[THUMB_INDEX]
 
@@ -58,7 +58,7 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
 
   has_attached_file :video, # rubocop:disable Lambda
                     processors: [:ffmpeg, :qtfaststart],
-                    styles: lambda { |v| v.instance.send(:paperclip_styles) }
+                    styles: lambda { |video| video.instance.send(:paperclip_styles) } # rubocop:disable LineLength
 
   do_not_validate_attachment_file_type :video
 
@@ -100,25 +100,25 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
   end
 
   def self.create_from_file(filename, parent_object = nil)
-    v = new
+    video = new
     if parent_object
-      v.videoable_type = parent_object.class.name
-      v.videoable_id = parent_object.id
+      video.videoable_type = parent_object.class.name
+      video.videoable_id = parent_object.id
     end
-    v.from_file = filename
-    v.save
-    v
+    video.from_file = filename
+    video.save
+    video
   end
 
   def self.create_from_file!(filename, parent_object = nil)
-    v = new
+    video = new
     if parent_object
-      v.videoable_type = parent_object.class.name
-      v.videoable_id = parent_object.id
+      video.videoable_type = parent_object.class.name
+      video.videoable_id = parent_object.id
     end
-    v.from_file = filename
-    v.save!
-    v
+    video.from_file = filename
+    video.save!
+    video
   end
 
   def seconds
@@ -278,11 +278,11 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
 
     def detailed_thumb_styles
       Hash[
-        1.upto(number_of_detailed_thumb_styles).map do |n|
+        1.upto(number_of_detailed_thumb_styles).map do |number|
           [
-            "detailed_thumb#{n}".to_sym,
+            "detailed_thumb#{number}".to_sym,
             THUMB_DEFAULTS.merge(
-              time: ss_at_detailed_thumb(n)
+              time: ss_at_detailed_thumb(number)
             )
           ]
         end
@@ -291,11 +291,11 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
 
     def normal_thumb_styles
       Hash[
-        THUMBNAILS.each_with_index.map do |name, n|
+        THUMBNAILS.each_with_index.map do |name, i|
           [
             name,
             THUMB_DEFAULTS.merge(
-              time: ss(THUMB_PERCENTILE * n)
+              time: ss(THUMB_PERCENTILE * i)
             )
           ]
         end
