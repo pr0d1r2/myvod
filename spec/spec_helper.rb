@@ -7,20 +7,6 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
-require 'factory_girl'
-require 'sidekiq/testing/inline'
-require 'vcr'
-
-VCR.configure do |c|
-  c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-  c.hook_into :webmock
-end
-
-require 'database_cleaner'
-DatabaseCleaner.strategy = :truncation
-
-require 'capybara/user_agent'
-Capybara::UserAgent.add_user_agents(iphone: 'iphone')
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -30,64 +16,13 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
-require 'fileutils'
-
-def cleanup_download_directories
-  if File.exist?(Rails.configuration.magnet_download_tmp_dir)
-    FileUtils.rm_rf(Rails.configuration.magnet_download_tmp_dir)
-  end
-  if File.exist?(Rails.configuration.magnet_download_finished_dir)
-    FileUtils.rm_rf(Rails.configuration.magnet_download_finished_dir)
-  end
-end
-
-def create_download_directories
-  unless File.directory?(Rails.configuration.magnet_download_tmp_dir)
-    FileUtils.mkdir_p(Rails.configuration.magnet_download_tmp_dir)
-  end
-  unless File.directory?(Rails.configuration.magnet_download_finished_dir)
-    FileUtils.mkdir_p(Rails.configuration.magnet_download_finished_dir)
-  end
-end
-
-def input_files_directory
-  "#{Rails.root}/tmp/test/input_files"
-end
-
-def prepare_input_files_directory
-  unless File.directory?(input_files_directory)
-    FileUtils.mkdir_p(input_files_directory)
-  end
-end
-
-def cleanup_input_files_directory
-  if File.directory?(input_files_directory)
-    FileUtils.rm_rf(input_files_directory)
-  end
-end
-
-def input_directories_directory
-  "#{Rails.root}/tmp/test/input_directories"
-end
-
-def prepare_input_directories_directory
-  unless File.directory?(input_directories_directory)
-    FileUtils.mkdir_p(input_directories_directory)
-  end
-end
-
-def cleanup_input_directories_directory
-  if File.directory?(input_directories_directory)
-    FileUtils.rm_rf(input_directories_directory)
-  end
-end
-
 RSpec.configure do |config|
   config.before(:all) do
     DatabaseCleaner.clean
   end
 
   config.include Capybara::UserAgent::DSL
+  config.include FilesystemSpecHelpers
 
   # ## Mock Framework
   #
@@ -116,6 +51,8 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = 'random'
 
+  include FilesystemSpecHelpers
+
   config.before(:suite) do
     cleanup_download_directories
     create_download_directories
@@ -126,13 +63,5 @@ RSpec.configure do |config|
     cleanup_download_directories
     cleanup_input_files_directory
     cleanup_input_directories_directory
-  end
-end
-
-# do not perform any physical downloads
-require 'ruby_bittorrent'
-BitTorrent.class_eval do
-  def download!
-    true
   end
 end
