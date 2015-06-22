@@ -196,10 +196,8 @@ class Magnet < ActiveRecord::Base # rubocop:disable ClassLength
   end
 
   def has_bad_words?
-    BadWord.find_in_batches do |bad_words|
-      bad_words.each do |bad_word|
-        return true if title.downcase.include?(bad_word.word)
-      end
+    BadWord.find_each do |bad_word|
+      return true if title.downcase.include?(bad_word.word)
     end
   end
 end
