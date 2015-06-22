@@ -17,11 +17,11 @@ module VideosHelper
     @unseen_count ||= Video.unseen_count
   end
 
-  def video_thumbnail_link(video, format, i)
+  def video_thumbnail_link(video, format, index)
     link_to(
       image_tag(video.video.url(format)),
       '#',
-      onclick: video_thumbnail_onclick(video, i)
+      onclick: video_thumbnail_onclick(video, index)
     )
   end
 
