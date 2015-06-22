@@ -10,6 +10,13 @@ class VideoDirectory < Dir
 
   def import
     convertable_file_types.each do |convertable_file_type|
+      import_file_type(convertable_file_type)
+    end
+  end
+
+  private
+
+    def import_file_type(convertable_file_type)
       Dir.glob(
         "#{path}/**/*.#{convertable_file_type}"
       ).each do |convertable_file_path|
@@ -18,9 +25,6 @@ class VideoDirectory < Dir
         end
       end
     end
-  end
-
-  private
 
     def convertable_file_types
       Video::CONVERTABLE_INPUT.map do |filename|

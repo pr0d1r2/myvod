@@ -13,19 +13,8 @@ class MagnetSource < ActiveRecord::Base
     find(id).import
   end
 
-  def import # rubocop:disable MethodLength
-    1.upto(number_of_pages) do |page|
-      fetch_results(page).each do |result|
-        torrent_details = TorrentDetails.new(result[:torrent_id])
-        result.merge!(
-          files: torrent_details.files,
-          size: torrent_details.size,
-          uploaded: torrent_details.uploaded,
-          description: torrent_details.description,
-        )
-        magnets.create_or_update_by_torrent_id(result)
-      end
-    end
+  def import
+    1.upto(number_of_pages) { |page| import_page(page) }
   end
 
   def self.find_or_create!(attributes)
@@ -40,6 +29,19 @@ class MagnetSource < ActiveRecord::Base
   end
 
   private
+
+  def import_page(page)
+    fetch_results(page).each do |result|
+      torrent_details = TorrentDetails.new(result[:torrent_id])
+      result.merge!(
+        files: torrent_details.files,
+        size: torrent_details.size,
+        uploaded: torrent_details.uploaded,
+        description: torrent_details.description,
+      )
+      magnets.create_or_update_by_torrent_id(result)
+    end
+  end
 
   def fetch_results(page)
     pirate_bay_search(page).results
