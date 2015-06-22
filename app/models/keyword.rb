@@ -40,17 +40,12 @@ class Keyword < ActiveRecord::Base
 
   def create_magnet_sources
     categories.map do |category|
-      magnet_source = magnet_source_for_category(category)
-      magnet_source.category = category
-      magnet_source.magnet_keyword = keyword
-      magnet_source.sort_by = ThePirateBay::SortBy::Relevance
-      magnet_source.number_of_pages = 10
-      magnet_source.save!
+      magnet_sources.find_or_create!(
+        category: category,
+        magnet_keyword: keyword,
+        sort_by: ThePirateBay::SortBy::Relevance,
+        number_of_pages: 10
+      )
     end
-  end
-
-  def magnet_source_for_category(category)
-    magnet_sources.find_by_category_and_magnet_keyword(category, keyword) ||
-      magnet_sources.new
   end
 end

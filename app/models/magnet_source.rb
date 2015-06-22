@@ -28,6 +28,17 @@ class MagnetSource < ActiveRecord::Base
     end
   end
 
+  def self.find_or_create!(attributes)
+    record = find_by(
+      category: attributes[:category],
+      magnet_keyword: attributes[:magnet_keyword]
+    ) || new
+    record.attributes = attributes
+    record.category = attributes[:category]
+    record.magnet_keyword = attributes[:magnet_keyword]
+    record.save!
+  end
+
   private
 
   def fetch_results(page)
