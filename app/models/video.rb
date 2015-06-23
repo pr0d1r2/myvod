@@ -101,10 +101,7 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
 
   def self.create_from_file(filename, parent_object = nil)
     video = new
-    if parent_object
-      video.videoable_type = parent_object.class.name
-      video.videoable_id = parent_object.id
-    end
+    video.videoable = parent_object if parent_object
     video.from_file = filename
     video.save
     video
@@ -112,10 +109,7 @@ class Video < ActiveRecord::Base # rubocop:disable ClassLength
 
   def self.create_from_file!(filename, parent_object = nil)
     video = new
-    if parent_object
-      video.videoable_type = parent_object.class.name
-      video.videoable_id = parent_object.id
-    end
+    video.videoable = parent_object if parent_object
     video.from_file = filename
     video.save!
     video
